@@ -14,14 +14,14 @@ There are several documents that are relevent for contributing to Dojo 2.
 
 There are several packages that makeup the Dojo 2 platform:
 
-* `[dojo/core](https://github.com/dojo/core)` - The foundational code of the Dojo 2 platform
-* `[dojo/loader](https://github.com/dojo/loader)` - A TypeScript based AMD loader
-* `[dojo/dom](https://github.com/dojo/dom)` - A set of API for manipulating the DOM
-* `[dojo/parser](https://github.com/dojo/parser)` - A HTML document parser for instantiating objects declaratively
-* `[dojo/compose](https://github.com/dojo/compose)` - A mixin/trait based composition library
-* `[dojo/i18n](https://github.com/dojo/i18n)` - A set of internationalization tooling
-* `[dojo/routing](https://github.com/dojo/routing)` - A routing service to build web applications with
-* `[dojo/crypto](https://github.com/dojo/crypto)` - A set of libraries to deal with cryptography
+* [`dojo/core`](https://github.com/dojo/core) - The foundational code of the Dojo 2 platform
+* [`dojo/loader`](https://github.com/dojo/loader) - A TypeScript based AMD loader
+* [`dojo/dom`](https://github.com/dojo/dom) - A set of API for manipulating the DOM
+* [`dojo/parser`](https://github.com/dojo/parser) - A HTML document parser for instantiating objects declaratively
+* [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library
+* [`dojo/i18n`](https://github.com/dojo/i18n) - A set of internationalization tooling
+* [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
+* [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
 
 ### Status
 
