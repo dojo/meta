@@ -19,6 +19,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/dom`](https://github.com/dojo/dom) - A set of API for manipulating the DOM
 * [`dojo/parser`](https://github.com/dojo/parser) - A HTML document parser for instantiating objects declaratively
 * [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library
+* [`dojo/actions`](https://github.com/dojo/actions) - A menento like library for Dojo 2 applications
 * [`dojo/i18n`](https://github.com/dojo/i18n) - A set of internationalization tooling
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
@@ -34,6 +35,7 @@ The following tables contain status information for the packages:
 |[dojo/dom](https://github.com/dojo/dom)|[![Build Status](https://travis-ci.org/dojo/dom.svg?branch=master)](https://travis-ci.org/dojo/dom)|[![codecov.io](http://codecov.io/github/dojo/dom/coverage.svg?branch=master)](http://codecov.io/github/dojo/dom?branch=master)| |
 |[dojo/parser](https://github.com/dojo/parser)|[![Build Status](https://travis-ci.org/dojo/parser.svg?branch=master)](https://travis-ci.org/dojo/parser)|[![codecov.io](http://codecov.io/github/dojo/parser/coverage.svg?branch=master)](http://codecov.io/github/dojo/parser?branch=master)| |
 |[dojo/compose](https://github.com/dojo/compose)|[![Build Status](https://travis-ci.org/dojo/compose.svg?branch=master)](https://travis-ci.org/dojo/compose)|[![codecov.io](http://codecov.io/github/dojo/compose/coverage.svg?branch=master)](http://codecov.io/github/dojo/compose?branch=master)| |
+|[dojo/actions](https://github.com/dojo/actions)|[![Build Status](https://travis-ci.org/dojo/actions.svg?branch=master)](https://travis-ci.org/dojo/actions)|[![codecov.io](http://codecov.io/github/dojo/actions/coverage.svg?branch=master)](http://codecov.io/github/dojo/actions?branch=master)| |
 |[dojo/i18n](https://github.com/dojo/i18n)|[![Build Status](https://travis-ci.org/dojo/i18n.svg?branch=master)](https://travis-ci.org/dojo/i18n)|[![codecov.io](http://codecov.io/github/dojo/i18n/coverage.svg?branch=master)](http://codecov.io/github/dojo/i18n?branch=master)| |
 |[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)](https://travis-ci.org/dojo/routing)|[![codecov.io](http://codecov.io/github/dojo/routing/coverage.svg?branch=master)](http://codecov.io/github/dojo/routing?branch=master)| |
 |[dojo/crypto](https://github.com/dojo/crypto)|[![Build Status](https://travis-ci.org/dojo/crypto.svg?branch=master)](https://travis-ci.org/dojo/crypto)|[![codecov.io](http://codecov.io/github/dojo/crypto/coverage.svg?branch=master)](http://codecov.io/github/dojo/crypto?branch=master)| |
