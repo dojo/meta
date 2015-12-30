@@ -2,7 +2,7 @@
 
 This repository contains information regarding Dojo 2 that crosses package boundries.
 
-# Guidelines and Style Guide
+## Guidelines and Style Guide
 
 There are several documents that are relevent for contributing to Dojo 2.
 
@@ -10,11 +10,20 @@ There are several documents that are relevent for contributing to Dojo 2.
 * [Style Guide](STYLE.md) - The style guide for Dojo 2.
 * [tslint.json](tslint.json) - The configuration file [tslint](http://palantir.github.io/tslint/) that is used to validate Dojo 2 code against
 
-# Packages
+## Packages
 
-There are several packages that makeup the Dojo 2 platform.
+There are several packages that makeup the Dojo 2 platform:
 
-## Status
+* `[dojo/core](https://github.com/dojo/core)` - The foundational code of the Dojo 2 platform
+* `[dojo/loader](https://github.com/dojo/loader)` - A TypeScript based AMD loader
+* `[dojo/dom](https://github.com/dojo/dom)` - A set of API for manipulating the DOM
+* `[dojo/parser](https://github.com/dojo/parser)` - A HTML document parser for instantiating objects declaratively
+* `[dojo/compose](https://github.com/dojo/compose)` - A mixin/trait based composition library
+* `[dojo/i18n](https://github.com/dojo/i18n)` - A set of internationalization tooling
+* `[dojo/routing](https://github.com/dojo/routing)` - A routing service to build web applications with
+* `[dojo/crypto](https://github.com/dojo/crypto)` - A set of libraries to deal with cryptography
+
+### Status
 
 The following tables contain status information for the packages:
 
