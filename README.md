@@ -1,9 +1,22 @@
-This repository contains common guidelines for writing, committing, and accepting contributions to Dojo 2 packages.
+# dojo-meta
 
-* [Contributing Guidelines](CONTRIBUTING.md)
-* [Style Guide](STYLE.md)
+This repository contains information regarding Dojo 2 that crosses package boundries.
 
-# Package Statuses
+# Guidelines and Style Guide
+
+There are several documents that are relevent for contributing to Dojo 2.
+
+* [Contributing Guidelines](CONTRIBUTING.md) - Guidelines for contributing code (or documentation) to Dojo 2
+* [Style Guide](STYLE.md) - The style guide for Dojo 2.
+* [tslint.json](tslint.json) - The configuration file [tslint](http://palantir.github.io/tslint/) that is used to validate Dojo 2 code against
+
+# Packages
+
+There are several packages that makeup the Dojo 2 platform.
+
+## Status
+
+The following tables contain status information for the packages:
 
 |Package|CI Status|Code Coverage|npm       |
 |-------|---------|-------------|----------|
