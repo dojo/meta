@@ -19,7 +19,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/dom`](https://github.com/dojo/dom) - A set of API for manipulating the DOM
 * [`dojo/parser`](https://github.com/dojo/parser) - A HTML document parser for instantiating objects declaratively
 * [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library
-* [`dojo/actions`](https://github.com/dojo/actions) - A menento like library for Dojo 2 applications
+* [`dojo/actions`](https://github.com/dojo/actions) - A memento like library for Dojo 2 applications
 * [`dojo/i18n`](https://github.com/dojo/i18n) - A set of internationalization tooling
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
