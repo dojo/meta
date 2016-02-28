@@ -12,7 +12,7 @@ The following table lists TypeScript roadmap items or issues that are of interes
 |Variadic Kinds|2.0|[Microsoft/TypeScript#5453](https://github.com/Microsoft/TypeScript/issues/5453)|Currently, there are use cases in [dojo/compose](https://github.com/dojo/compose) where aggregating types is necessary|
 |Ambient Decorators|2.0|[Microsoft/TypeScript#2900](https://github.com/Microsoft/TypeScript/issues/2900)|For [dojo/compose](https://github.com/dojo/compose) the ability to programatically access typing information is important|
 |Conditional Decorators|2.0|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript|
-
+|Read Only Properties|2.0|[Microsoft/TypeScript#6532](https://github.com/Microsoft/TypeScript/pull/6532)|Allows specification of interfaces that do not allow property reassignment, which can better refect runtime behaviour|
 
 ## TypeScript 1.8
 
@@ -35,3 +35,4 @@ The following table lists issues that are important to Dojo 2, but the TypeScrip
 |Programmatically Modifying Types|[Microsoft/TypeScript#4490](https://github.com/Microsoft/TypeScript/issues/4490)|Since Mixins are not on the horizon, the ability to programmatically access them is another way of dealing with the problem.  It maybe the ambient decorators will be sufficient to meet this need|
 |Mixins/Traits|[Microsoft/TypeScript#311](https://github.com/Microsoft/TypeScript/issues/311)|Ability to better support mixin type functionality, the TS team is currently declining because they feel it will conflict with the future of ES|
 |Better Loader Plugin Support|[Microsoft/TypeScript#6615](https://github.com/Microsoft/TypeScript/issues/6615)|Currently, it is challenging to type loader plugins.  While not on the roadmap specifically, I do believe this will be addressed|
+|Supporting "partial" objects|[Microsoft/TypeScript#6613](https://github.com/Microsoft/TypeScript/issues/6613)|Currently, the TypeScript team feels they need type operators before they can address this and they believe an "all optional" typing is a sufficient workaround|
