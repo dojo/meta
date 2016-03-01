@@ -13,6 +13,7 @@ The following table lists TypeScript roadmap items or issues that are of interes
 |Ambient Decorators|2.0|[Microsoft/TypeScript#2900](https://github.com/Microsoft/TypeScript/issues/2900)|For [dojo/compose](https://github.com/dojo/compose) the ability to programatically access typing information is important|
 |Conditional Decorators|2.0|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript|
 |Read Only Properties|2.0|[Microsoft/TypeScript#6532](https://github.com/Microsoft/TypeScript/pull/6532)|Allows specification of interfaces that do not allow property reassignment, which can better refect runtime behaviour|
+|"Native UMD"|2.0|[Microsoft/TypeScript#7125](https://github.com/Microsoft/TypeScript/issues/7125)|Solves the problem of exporting interfaces for re-importing, hopefully avoiding collisions|
 
 ## TypeScript 1.8
 
