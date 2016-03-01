@@ -35,7 +35,7 @@ $ git checkout master
 $ git pull
 ```
 
-You should then create a branch for the PR.  You shouldn't push this branch to the remote repository, so the name is irrelevent, but it is good practice to keep them named logically:
+You should then create a branch for the PR.  You shouldn't push this branch to the remote repository, so the name is irrelevant, but it is good practice to keep them named logically:
 
 ```sh
 $ git checkout -b pr-200
