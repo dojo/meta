@@ -23,6 +23,14 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/i18n`](https://github.com/dojo/i18n) - A set of internationalization tooling
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
+* `dojo/widgets` - A set of rich UI elements
+
+### Support Pakcages
+
+There are a couple packages which are designed to support the Dojo 2 platform:
+
+* [dojo/dojo2-package-template](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
+* [dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
 
 ### Status
 
@@ -41,3 +49,4 @@ The following tables contain status information for the packages:
 |[dojo/crypto](https://github.com/dojo/crypto)|[![Build Status](https://travis-ci.org/dojo/crypto.svg?branch=master)](https://travis-ci.org/dojo/crypto)|[![codecov.io](http://codecov.io/github/dojo/crypto/coverage.svg?branch=master)](http://codecov.io/github/dojo/crypto?branch=master)| |Proposal|
 |dojo/app-factory| | | |*Proposal*|
 |dojo/widgets| | | |*Proposal*|
+|[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](http://codecov.io/github/dojo/grunt-dojo2/coverage.svg?branch=master)](http://codecov.io/github/dojo/grunt-dojo2?branch=master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](http://badge.fury.io/js/grunt-dojo2)|Alpha|
