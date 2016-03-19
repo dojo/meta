@@ -281,6 +281,18 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 1. Arrow functions SHOULD NOT be used simply as function shorthand;
 	they should ONLY be used *specifically* for execution context preservation.
 
+	```ts
+	// right
+	promise.then(function (result) {
+		return processResult(result);
+	});
+
+	// wrong (no need for binding this)
+	promise.then((result) => {
+		return processResult(result);
+	});
+	```
+
 1. `let self = this` MAY still be used instead if it enhances readability
 	(e.g. for preservation across multiple nested scopes).
 
