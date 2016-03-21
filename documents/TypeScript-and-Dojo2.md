@@ -9,11 +9,12 @@ The following table lists TypeScript roadmap items or issues that are of interes
 |Implicit index signatures|2.0|[Microsoft/TypeScript#7029](https://github.com/Microsoft/TypeScript/issues/7029)|Several of the Dojo 2 core APIs would benefit from being able to pass object literals without explicitly typing them|
 |Function `this` typing|2.0|[Microsoft/TypeScript#3694](https://github.com/Microsoft/TypeScript/issues/3694)|There are several use cases in Dojo where typing `this` within a function will improve code safety|
 |`async`/`await` down levelling|2.0|[Microsoft/TypeScript#1664](https://github.com/Microsoft/TypeScript/issues/1664)|This is a significant challenge for supporting non-ES6+ environments with Dojo 2|
-|Variadic Kinds|2.0|[Microsoft/TypeScript#5453](https://github.com/Microsoft/TypeScript/issues/5453)|Currently, there are use cases in [dojo/compose](https://github.com/dojo/compose) where aggregating types is necessary|
-|Ambient Decorators|2.0|[Microsoft/TypeScript#2900](https://github.com/Microsoft/TypeScript/issues/2900)|For [dojo/compose](https://github.com/dojo/compose) the ability to programatically access typing information is important|
-|Conditional Decorators|2.0|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript|
 |Read Only Properties|2.0|[Microsoft/TypeScript#6532](https://github.com/Microsoft/TypeScript/pull/6532)|Allows specification of interfaces that do not allow property reassignment, which can better refect runtime behaviour|
 |"Native UMD"|2.0|[Microsoft/TypeScript#7125](https://github.com/Microsoft/TypeScript/issues/7125)|Solves the problem of exporting interfaces for re-importing, hopefully avoiding collisions|
+|Variadic Kinds|2.1|[Microsoft/TypeScript#5453](https://github.com/Microsoft/TypeScript/issues/5453)|Currently, there are use cases in [dojo/compose](https://github.com/dojo/compose) where aggregating types is necessary|
+|Ambient Decorators|2.1|[Microsoft/TypeScript#2900](https://github.com/Microsoft/TypeScript/issues/2900)|For [dojo/compose](https://github.com/dojo/compose) the ability to programatically access typing information is important|
+|Conditional Decorators|2.1|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript|
+|Granular Targetting|*?*|[Microsoft/TypeScript#4692](https://github.com/Microsoft/TypeScript/issues/4692)|Makes it easier to target specific platforms that might have support for many ES6+ features, this requires [Microsoft/TypeScript#6974](https://github.com/Microsoft/TypeScript/issues/6974) first, which is targeted for 2.0|
 
 ## TypeScript 1.8
 
