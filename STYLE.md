@@ -358,6 +358,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 1. Module exports SHOULD be ordered alphabetically, case-insensitively, by identifier.
 
 1. Module imports SHOULD be ordered alphabetically *by module ID*, starting with the package name.
+	Module imports from the current package SHOULD come last.
 	Module imports SHOULD NOT be ordered by variable name, due to potential confusion when destructuring is involved.
 
 1. Functions MUST be declared before their use. The exceptions to this rule
