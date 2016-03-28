@@ -25,7 +25,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
 * `dojo/widgets` - A set of rich UI elements
 
-### Support Pakcages
+### Support Packages
 
 There are a couple packages which are designed to support the Dojo 2 platform:
 
