@@ -23,7 +23,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/i18n`](https://github.com/dojo/i18n) - A set of internationalization tooling
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
-* `dojo/widgets` - A set of rich UI elements
+* [`dojo/widgets`](https://github.com/dojo/widgets) - A set of rich UI elements
 
 ### Support Pakcages
 
