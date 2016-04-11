@@ -24,6 +24,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
 * [`dojo/widgets`](https://github.com/dojo/widgets) - A set of rich UI elements
+* [`dojo/stores`](https://github.com/dojo/stores) - Data stores for Dojo 2
 
 ### Support Packages
 
@@ -48,5 +49,6 @@ The following tables contain status information for the packages:
 |[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)](https://travis-ci.org/dojo/routing)|[![codecov.io](http://codecov.io/github/dojo/routing/coverage.svg?branch=master)](http://codecov.io/github/dojo/routing?branch=master)| |Proposal|
 |[dojo/crypto](https://github.com/dojo/crypto)|[![Build Status](https://travis-ci.org/dojo/crypto.svg?branch=master)](https://travis-ci.org/dojo/crypto)|[![codecov.io](http://codecov.io/github/dojo/crypto/coverage.svg?branch=master)](http://codecov.io/github/dojo/crypto?branch=master)| |Proposal|
 |[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](http://codecov.io/github/dojo/widgets/coverage.svg?branch=master)](http://codecov.io/github/dojo/widgets?branch=master)| |Prototype|
+|[dojo/stores](https://github.com/dojo/stores)| | | |*Proposal*|
 |dojo/app-factory| | | |*Proposal*|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](http://codecov.io/github/dojo/grunt-dojo2/coverage.svg?branch=master)](http://codecov.io/github/dojo/grunt-dojo2?branch=master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](http://badge.fury.io/js/grunt-dojo2)|Alpha|
