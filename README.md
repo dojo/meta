@@ -58,8 +58,8 @@ The following tables contain status information for the packages:
 |[dojo/actions](https://github.com/dojo/actions)|[![Build Status](https://travis-ci.org/dojo/actions.svg?branch=master)](https://travis-ci.org/dojo/actions)|[![codecov.io](http://codecov.io/gh/dojo/actions/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/actions/branch/master)|[![npm version](https://badge.fury.io/js/dojo-actions.svg)](http://badge.fury.io/js/dojo-actions)|Alpha|
 |[dojo/dom](https://github.com/dojo/dom)|[![Build Status](https://travis-ci.org/dojo/dom.svg?branch=master)](https://travis-ci.org/dojo/dom)|[![codecov.io](http://codecov.io/gh/dojo/dom/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/dom/branch/master)| |*Alpha*|
 |[dojo/parser](https://github.com/dojo/parser)|[![Build Status](https://travis-ci.org/dojo/parser.svg?branch=master)](https://travis-ci.org/dojo/parser)|[![codecov.io](http://codecov.io/gh/dojo/parser/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/parser/branch/master)| |Prototype|
+|[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)|[![codecov.io](http://codecov.io/gh/dojo/routing/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/routing/branch/master)| |Prototype|
 |[dojo/i18n](https://github.com/dojo/i18n)| | | |*Prototype*|
-|[dojo/routing](https://github.com/dojo/routing)| | | |Proposal|
 |[dojo/crypto](https://github.com/dojo/crypto)| | | |Proposal|
 |[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](http://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/widgets/branch/master)| |Prototype|
 |[dojo/stores](https://github.com/dojo/stores)| | | |*Proposal*|
