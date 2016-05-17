@@ -37,6 +37,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
 * [`dojo/widgets`](https://github.com/dojo/widgets) - A set of rich UI elements
 * [`dojo/stores`](https://github.com/dojo/stores) - Data stores for Dojo 2
+* [`dojo/app`](https://github.com/dojo/app) - An application framework for Dojo 2
 
 ### Support Packages
 
@@ -58,11 +59,11 @@ The following tables contain status information for the packages:
 |[dojo/actions](https://github.com/dojo/actions)|[![Build Status](https://travis-ci.org/dojo/actions.svg?branch=master)](https://travis-ci.org/dojo/actions)|[![codecov.io](http://codecov.io/gh/dojo/actions/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/actions/branch/master)|[![npm version](https://badge.fury.io/js/dojo-actions.svg)](http://badge.fury.io/js/dojo-actions)|Alpha|
 |[dojo/dom](https://github.com/dojo/dom)|[![Build Status](https://travis-ci.org/dojo/dom.svg?branch=master)](https://travis-ci.org/dojo/dom)|[![codecov.io](http://codecov.io/gh/dojo/dom/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/dom/branch/master)| |*Alpha*|
 |[dojo/parser](https://github.com/dojo/parser)|[![Build Status](https://travis-ci.org/dojo/parser.svg?branch=master)](https://travis-ci.org/dojo/parser)|[![codecov.io](http://codecov.io/gh/dojo/parser/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/parser/branch/master)| |Prototype|
-|[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)|[![codecov.io](http://codecov.io/gh/dojo/routing/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/routing/branch/master)| |Prototype|
+|[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)](https://travis-ci.org/dojo/routing)|[![codecov.io](http://codecov.io/gh/dojo/routing/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/routing/branch/master)| |Prototype|
+|[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](http://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/widgets/branch/master)| |Prototype|
 |[dojo/i18n](https://github.com/dojo/i18n)| | | |*Prototype*|
 |[dojo/crypto](https://github.com/dojo/crypto)| | | |Proposal|
-|[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](http://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/widgets/branch/master)| |Prototype|
-|[dojo/stores](https://github.com/dojo/stores)| | | |*Proposal*|
-|dojo/app-factory| | | |*Proposal*|
+|[dojo/stores](https://github.com/dojo/stores)| | | |Proposal|
+|[dojo/app](https://github.com/dojo/app)| | | |Proposal|
 |[dojo/cli](https://github.com/dojo/cli/)| | | |Proposal|
-|[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](http://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](http://badge.fury.io/js/grunt-dojo2)|Alpha|
+|[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](http://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](http://badge.fury.io/js/grunt-dojo2)|Beta|
