@@ -61,9 +61,9 @@ The following tables contain status information for the packages:
 |[dojo/parser](https://github.com/dojo/parser)|[![Build Status](https://travis-ci.org/dojo/parser.svg?branch=master)](https://travis-ci.org/dojo/parser)|[![codecov.io](http://codecov.io/gh/dojo/parser/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/parser/branch/master)| |Prototype|
 |[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)](https://travis-ci.org/dojo/routing)|[![codecov.io](http://codecov.io/gh/dojo/routing/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/routing/branch/master)| |Prototype|
 |[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](http://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/widgets/branch/master)| |Prototype|
+|[dojo/stores](https://github.com/dojo/stores)|[![Build Status](https://travis-ci.org/dojo/stores.svg?branch=master)](https://travis-ci.org/dojo/stores)|[![codecov.io](http://codecov.io/gh/dojo/stores/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/stores/branch/master)| |Proposal|
+|[dojo/app](https://github.com/dojo/app)|[![Build Status](https://travis-ci.org/dojo/app.svg?branch=master)](https://travis-ci.org/dojo/app)|[![codecov.io](http://codecov.io/gh/dojo/app/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/app/branch/master)| |Proposal|
 |[dojo/i18n](https://github.com/dojo/i18n)| | | |*Prototype*|
 |[dojo/crypto](https://github.com/dojo/crypto)| | | |Proposal|
-|[dojo/stores](https://github.com/dojo/stores)| | | |Proposal|
-|[dojo/app](https://github.com/dojo/app)| | | |Proposal|
 |[dojo/cli](https://github.com/dojo/cli/)| | | |Proposal|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](http://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](http://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](http://badge.fury.io/js/grunt-dojo2)|Beta|
