@@ -16,7 +16,7 @@ submit a pull request or a ticket.
 
 ## Search the Project Issues
 
-It is useful, before you get too far, to makek sure that your issue isn't already known or otherwise addressed by checking
+It is useful, before you get too far, to make sure that your issue isn't already known or otherwise addressed by checking
 the [issues list][issues] for this project.  If you think it is a valid defect or enhancement, feel free to submit your pull
 request.
 
