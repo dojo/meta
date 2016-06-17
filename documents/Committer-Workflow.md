@@ -24,6 +24,9 @@ You should either name your branch to start with `feature-` or `issue-`.
 
 ## Accepting a Pull Request
 
+*Note: GitHub now supports squash merges, which reflect this workflow below.  Therefore as an
+alternative, PRs that have passed all their checks can be merged in GitHub.*
+
 You should create a local branch to pull the request into, before merging it into a main branch.  Generally all pull requests should be squashed into a single commit in a main branch.
 
 Let's assume you are merging pull request #200 into `dojo-core` into `master`.
@@ -89,10 +92,10 @@ $ git commit --author "Someone <someone@example.com>"
 We need to write our commit message then.  We should have a clear single line description of the commit, followed by a blank line and more details as well as referencing any issues or PRs we need to mention.  For example, if PR #200 also fixed issue #190, we would write something like this:
 
 ```
-Fixed some sort of code in module
+Fixed some sort of code in module (#200)
 
-- Updated the tests
-- Made a change
+* Updated the tests
+* Made a change
 
 Closes #200
 Fixes #190
@@ -107,3 +110,74 @@ $ git push
 ```
 
 Wash and repeat as required.
+
+## Publishing a Package on npm
+
+To publish a package, you should ensure you have a current checked out `master` branch.
+
+Validate the version of the package you are going to publish, by ensuring you are planning the right
+tag and the right right version on npm:
+
+```
+$ git tag
+2.0.0-alpha.3
+2.0.0-alpha.4
+2.0.0-alpha.5
+2.0.0-alpha.6
+2.0.0-alpha.7
+2.0.0-beta.1
+2.0.0-beta.2
+2.0.0-rc.1
+2.0.0
+2.0.1
+
+$ npm view
+```
+
+The tag you are going to create should match the semver version of the package on npm exactly.
+
+The only change that should be part of a release commit is the update to the `package.json`:
+
+```json
+{
+    "version": "2.1.0"
+}
+```
+
+Commit this change with a release comment similar to:
+
+```
+$ git commit -a -m "Release 2.1.0"
+```
+
+Then tag the release:
+
+```
+$ git tag 2.1.0
+```
+
+Publish to npm:
+
+```
+$ npm publish
+```
+
+Then update the `package.json` one more time:
+
+```json
+{
+    "version": "2.1.1-pre"
+}
+```
+
+Then commit this change:
+
+```
+$ git commit -a -m "Update package metadata"
+```
+
+Then push the changes upstream:
+
+```
+$ git push && git push --tags
+```
