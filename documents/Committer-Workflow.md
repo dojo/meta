@@ -24,14 +24,17 @@ You should either name your branch to start with `feature-` or `issue-`.
 
 ## Accepting a Pull Request
 
-*Note: GitHub now supports squash merges, which reflect this workflow below.  Therefore as an
-alternative, PRs that have passed all their checks can be merged in GitHub.*
+### Using GitHub
 
-You should create a local branch to pull the request into, before merging it into a main branch.  Generally all pull requests should be squashed into a single commit in a main branch.
+GitHub repositories should be configured to only allow *squash and merge* for landing pull requests. This is the preferred way of accepting a pull request. Please make sure the merge description is accurate and readable.
 
-Let's assume you are merging pull request #200 into `dojo-core` into `master`.
+### Locally
 
-You should ensure you have an up-to date master:
+The *squash and merge* approach is not always sufficient. Perhaps individual commits need to be retained or additional fixes need to be made. Just remember that generally all pull requests should be squashed into a single commit in a main branch.
+
+#### Setting up a Branch with the Pull Request
+
+If you do not yet have a local branch containing the pull request you can create one. Let's assume you are merging pull request #200 into `dojo-core` into `master`. You should ensure you have an up-to date master:
 
 ```sh
 $ git checkout master
@@ -52,26 +55,20 @@ $ git pull https://github.com/someone/core.git some-fix
 
 If the patch does not cleanly reply, you should use the `git mergetool` to resolve conflicts and then commit the results.
 
+#### Final Review
+
 Now is your opportunity to review the Pull Request.  Even though Travis CI should have validated the PR and Codecov.io commented on the coverage changes, you are the last step for it getting merged, especially when we are merging something that might have had conflicts.
 
 At a very least, you should run, to perform a development build and test against node:
 
 ```sh
 $ grunt test
+$ grunt dist
 ```
 
-One thing you will need is to sign-off on the PR, but attribute the commit to the original author.  You will need the appropriate e-mail address for the author.  If you are not sure of the e-mail address, `git log` can provide you with the information:
+#### Manual *squash and Merge*
 
-```sh
-$ git log
-commit 2c5e83668d8cfab0da61d3688874b0dc2e513956
-Author: Someone <someone@example.com>
-Date:   Tue Mar 1 08:00:00 2016 +0000
-
-    Some wonderful PR!
-```
-
-Now, we can checkout `master`:
+Checkout `master`:
 
 ```sh
 $ git checkout master
@@ -87,6 +84,17 @@ Now the commits will be staged as a single commit.  You may want to do one last 
 
 ```sh
 $ git commit --author "Someone <someone@example.com>"
+```
+
+You will need the appropriate e-mail address for the author.  If you are not sure of the e-mail address, `git log` can provide you with the information:
+
+```sh
+$ git log pr-200
+commit 2c5e83668d8cfab0da61d3688874b0dc2e513956
+Author: Someone <someone@example.com>
+Date:   Tue Mar 1 08:00:00 2016 +0000
+
+    Some wonderful PR!
 ```
 
 We need to write our commit message then.  We should have a clear single line description of the commit, followed by a blank line and more details as well as referencing any issues or PRs we need to mention.  For example, if PR #200 also fixed issue #190, we would write something like this:
@@ -105,11 +113,40 @@ Also, if for some reason we don't want to run the CI for this commit, don't forg
 
 You should now be ready to push:
 
-```
+```sh
 $ git push
 ```
 
-Wash and repeat as required.
+#### Fast-forward only Merges
+
+If you want to retain individual commits you can perform a *fast-forward only* merge.
+
+First checkout `master`:
+
+```sh
+$ git checkout master
+```
+
+Then merge the commits:
+
+```sh
+$ git merge --ff-only pr-200
+```
+
+This will fail if a *fast-forward only* merge is not possible. In that case checkout your local branch and rebase it against master, then try again:
+
+```sh
+$ git checkout pr-200
+$ git rebase master
+$ git checkout master
+$ git merge --ff-only pr-200
+```
+
+You should now be ready to push:
+
+```sh
+$ git push
+```
 
 ## Publishing a Package on npm
 
