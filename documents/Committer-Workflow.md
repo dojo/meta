@@ -18,11 +18,19 @@ What this will do though is make git complain when you have unstaged changes. Yo
 
 ### Branching
 
-As a committer, you can use your own fork of a repository to issue your pull requests, or create a feature or issue branch off of master for your work in progress and issuing a Pull Request.
+As a committer, you can use your own fork of a repository to issue your pull requests, or create a feature or issue branch off of master for your work in progress and issuing a Pull Request.  It is recommend that committers create a branch on the main repo, as it makes it easier to collaborate with other team members.
 
 You should either name your branch to start with `feature-` or `issue-`.
 
 ## Accepting a Pull Request
+
+### Reviewing
+
+When reviewing a PR, make any comments on the PR you feel need to be addressed.  When you feel your comments have
+been resolved, you should comment on the PR with a 👍.  If you raised the PR and the maintainer has provided you with
+a 👍, you can feel free to merge the PR as below.
+
+If unsure, when and how to merge, coordinate with the maintainer.
 
 ### Using GitHub
 
