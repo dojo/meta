@@ -44,6 +44,11 @@ We have deprecated a package:
 
 * [`dojo/parser`](https://github.com/dojo/parser) - A HTML document parser for instantiating objects declaratively - *This is likely to be deprecated in lieu of functionality provided by `dojo/app`.*
 
+### Examples
+
+We have added a repository of examples which have been built on Dojo 2.  Those examples are available
+in the [dojo/examples](https://github.com/dojo/examples) repository.
+
 ### Support Packages
 
 There are several packages which are designed to support the Dojo 2 platform:
@@ -74,3 +79,4 @@ The following tables contain status information for the packages:
 |[dojo/parser](https://github.com/dojo/parser)|[![Build Status](https://travis-ci.org/dojo/parser.svg?branch=master)](https://travis-ci.org/dojo/parser)|[![codecov.io](https://codecov.io/gh/dojo/parser/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/parser/branch/master)| |*Deprecated*|@kitsonk|
 |[dojo/cli](https://github.com/dojo/cli/)| | | |Proposal|@Tomdye|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta| |
+|[dojo/examples](https://github.com/dojo/examples)| | | | | |
