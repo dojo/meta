@@ -59,7 +59,7 @@ Objects that can *own* widgets are expected to offer up an interface that allows
 
 ### Children
 
-The parent *should* expose the children as a read only property that is an immutable `List` of the children it owns.
+The parent *should* expose the children as a read only property that is an immutable `List` or immutable `Map` of the children it owns.
 
 ### Adding Children
 
@@ -401,4 +401,106 @@ The ability to observe state and the ability to register actions as listeners to
 
 The high level architecture is a one way flow of information.  In that *stores* provide state to *widgets*, *widgets* call *actions* and *actions* mutate data in *stores*.  The `ObservableState` interface are the part of the Dojo 2 store API that are needed to manage the state.  The ability to take event listeners which provide a `do()` method is the way for widgets to call actions.
 
-Current plans are that the application factory will then instantiate applications and help manage their lifecycle.  The other major functional area of the application factory are interfaces to allow the parts of the application to be addressable, potentially when those parts of the application are not fully loaded.
+Logically, these are designed to work together, but the actual assumptions made by the widgeting system are fairly narrow.  This could allow alternative implementations of [dojo/app](https://github.com/dojo/app).
+
+The following sections detail out the assumptions made by the widgeting system to allow them to work in a larger application framework.
+
+### Registry Provider
+
+Because widget state is indented to be simple objects that are easily serializable, when operating in a complex environment, widgets need the ability to resolve other classes of items.  Therefore there is a specification for a registry provider, which allows a widget to get references to different registries (explained below).  The interface for the registry provider is:
+
+```typescript
+/**
+ * Provides access to read-only registries.
+ */
+export interface RegistryProvider<T> {
+	/**
+	 * Get a registry. Different widgets expect different types of registries.
+	 *
+	 * Implementations should throw if the given type is not supported.
+	 */
+	get<U extends T & Child>(type: 'widgets'): CreatableRegistry<U>;
+	get(type: 'actions' | 'stores'): Registry<T>;
+	get(type: string): Registry<T>;
+}
+```
+
+### Registries
+
+For `actions` and `stores` there is just a simple identity registry.  Widget that use registries expect the API to look
+like this:
+
+```typescript
+/**
+ * Registry to (asynchronously) get instances by their ID.
+ */
+export interface Registry<T> {
+	/**
+	 * Asynchronously get an instance by its ID.
+	 *
+	 * @param id Identifier for the instance that is to be retrieved
+	 * @return A promise for the instance. The promise rejects if no instance was found.
+	 */
+	get(id: string | symbol): Promise<T>;
+
+	/**
+	 * Look up the identifier for which the given value has been registered.
+	 *
+	 * Throws if the value hasn't been registered.
+	 *
+	 * @param value The value
+	 * @return The identifier
+	 */
+	identify(value: T): string | symbol;
+}
+```
+
+In some cases, widgets want to create other widgets (typically sub-widgets of a complex widget).  Therefore widgets expect
+the following registry to be returned for the `widget` registry:
+
+```typescript
+/**
+ * A special type of registry that allows realization of children on a parent
+ */
+export interface CreatableRegistry<T extends Child> extends Registry<T> {
+	/**
+	 * Realize a child of the specified parent, returning a promise which resolves with
+	 * a tuple that contains the ID and the realized instance.
+	 *
+	 * @param parent The parent where the realized child should be attached to
+	 * @param factory The factory that should be used to realize the child
+	 * @param options Any options that should be passed to the factory when realizing the child
+	 */
+	create<U extends T, O>(parent: { children: Map<string, Child> | List<Child>; }, factory: ComposeFactory<U, O>, options?: O): Promise<[ string | symbol, U ]>;
+}
+```
+
+### Managing Children via State
+
+Given these features combined with statefullness, widgets that are parents now have an API to manage their children from
+their state.
+
+In both cases, where the children are either an immutable `List` or `Map` of children, the children in the state *should* be represented as an array of `string`s, where each item of the array represents an ID which is resolvable via the registry.  Therefore when managing children, widgets *should* iterate over the `children` in their state, resolving any children.
+
+Because it is intended that an application framework would lazy instantiate widgets when they are first requested via the registry, the registry interface always returns a `Promise` which resolves with the instance.  Therefore widgets *should* only request widgets from the registry that they have not cached the IDs of as children.  In addition, since when a `Promise` is returned and resolved, a `render()` may have occurred, therefore, once the resolution completes, a widget should `.invalidate()` iteself to ensure it is properly represented.
+
+When there are changes directly on the widget (e.g. appending a child), the widget can use the `identify()` method on the registry to resolve the ID for the widget before patching it into its state.
+
+### Managing Actions via State
+
+Using the registry API, widgets *could* manage their event listeners via resolving to actionable items.
+
+When represented in the widgets state, the `listeners` should be an object with properties set to the name of the event and the value set to either the ID for the action or an array of the IDs for actions.
+
+Just like children widgets, it is intended that the application factory may need to resolve or load actions asynchronously, therefore the registry returns a `Promise` which resolves to the `Action`.  Therfore the widget must account for this and should potentially cache actions it has already seen as well as invalidate itself if the actions have been resolved via a `Promise`.
+
+### Widget Creation
+
+Widgets that need to interact with an application factory *must* accept a `registryProvider` option during initialization.  It is expected that this will be passed by the application factory when it instantiates the widget.  It is also generally assumed that the widget will be stateful and observe its state.  Therefore the application factory will also pass the `stateFrom` and `id` property.
+
+### Creating Sub Widgets
+
+If an application factory is being used, ideally a widget would leverage the application factory to create any sub widgets it needs and manage their state and lifecycle.  Therefore the `CreateableRegistry` exposes a `create()` method.
+
+**NOTE** the mechanics of this API are being iterated on currently.  (See: dojo/widgets#24)
+
