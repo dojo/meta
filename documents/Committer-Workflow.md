@@ -158,7 +158,9 @@ $ git push
 
 ## Publishing a Package on npm
 
-To publish a package, you should ensure you have a current checked out `master` branch.
+To publish a package, you should ensure you have a current checked out `master` branch.  The `package.json`
+in master should have the version set at `X.X.X-pre`.  If it doesn't, 😱 and 🔥 and find out what is
+wrong.
 
 Validate the version of the package you are going to publish, by ensuring you are planning the right
 tag and the right right version on npm:
@@ -179,7 +181,13 @@ $ git tag
 $ npm view
 ```
 
-The tag you are going to create should match the semver version of the package on npm exactly.
+If for example, you are doing the point release of `2.1.1`, the `package.json` should contain `2.1.1-pre` and you will be changing this to `2.1.1`, and post the publish, you will set it to `2.1.2-pre`.  If you are doing a non-point release, for example the next *beta* release.  The `package.json` would still contain `2.1.1-pre` and you will change it to `2.1.1-beta.1` and then change it back to `2.1.1-pre`.  The `-pre` are **never** published to npm.
+
+By convention, the non-point release tags we use are `-alpha.X`, `-beta.X` and `-rc.X`.  Note that once you reach a double digit, the sorting of these starts to break down, but it should have no impact on the semver resolution.
+
+The tag you are going to create should match the semver version of the package on npm exactly.  For example, if
+you are setting the version in the `package.json` to `"version": "2.0.0-beta.12"` the tag command should be
+`git tag 2.0.0-beta.12`.
 
 The only change that should be part of a release commit is the update to the `package.json`:
 
