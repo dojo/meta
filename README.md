@@ -1,5 +1,7 @@
 # dojo-meta
 
+[![Join the chat at https://gitter.im/dojo/dojo2](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dojo/dojo2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This repository contains information regarding Dojo 2 that crosses package boundaries.
 
 ## Guidelines and Style Guide
