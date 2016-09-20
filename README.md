@@ -86,3 +86,13 @@ The following tables contain status information for the packages:
 |[dojo/cli](https://github.com/dojo/cli/)|[![Build Status](https://travis-ci.org/dojo/cli.svg?branch=master)](https://travis-ci.org/dojo/cli)|[![codecov.io](https://codecov.io/gh/dojo/cli/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli.svg)](https://badge.fury.io/js/dojo-cli)|Alpha|@Tomdye|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta| |
 |[dojo/examples](https://github.com/dojo/examples)|[![Build Status](https://travis-ci.org/dojo/examples.svg?branch=master)](https://travis-ci.org/dojo/examples)|[![codecov.io](https://codecov.io/gh/dojo/examples/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/examples/branch/master)| | | |
+
+#### CLI Packages
+
+The `dojo/cli` will provide extensiable functionality via a variety of packages that can be plugged
+into the CLI.
+
+|Package|CI Status|Code Coverage|npm       |Stage|Maintainer|
+|-------|---------|-------------|----------|-----|----------|
+|[dojo/cli-build](https://github.com/dojo/cli-build)|[![Build Status](https://travis-ci.org/dojo/cli-build.svg?branch=master)](https://travis-ci.org/dojo/cli-build)|[![codecov.io](https://codecov.io/gh/dojo/cli-build/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli-build.svg)](https://badge.fury.io/js/dojo-cli-build)|Prototype| |
+|[dojo/cli-create-app](https://github.com/dojo/cli-create-app)|[![Build Status](https://travis-ci.org/dojo/cli-create-app.svg?branch=master)](https://travis-ci.org/dojo/cli-create-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-app/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli-create-app.svg)](https://badge.fury.io/js/dojo-cli-create-app)|Prototype| |
