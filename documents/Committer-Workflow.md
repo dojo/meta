@@ -20,15 +20,23 @@ What this will do though is make git complain when you have unstaged changes. Yo
 
 As a committer, you can use your own fork of a repository to issue your pull requests, or create a feature or issue branch off of master for your work in progress and issuing a Pull Request.  It is recommend that committers create a branch on the main repo, as it makes it easier to collaborate with other team members.
 
-You should either name your branch to start with `feature-` or `issue-`.
+You should either name your branch in the format of `feature-{issue-number}-{description}` or `issue-{issue-number}-{description}`.  With the issue number relating to the GitHub issue number for the branch and description being a short description.  For example:
+
+```
+issue-108-fix-defect
+feature-90-refactor-code
+```
 
 ## Accepting a Pull Request
 
 ### Reviewing
 
-When reviewing a PR, make any comments on the PR you feel need to be addressed.  When you feel your comments have
-been resolved, you should comment on the PR with a 👍.  If you raised the PR and the maintainer has provided you with
-a 👍, you can feel free to merge the PR as below.
+Use the review tools that are now part of GitHub.  There are issues if we enforce the protection on the `master` branch
+with being able to do releases of packages, so we cannot enforce via GitHub that approved reviews occur before squashing
+and merging the PR.
+
+A PR should have at least one approved review (and no outstanding change requested reviews) before merging.  Also, the other
+checks (like CI passing, CLA's checked, and code coverage maintained) should all be passed.
 
 If unsure, when and how to merge, coordinate with the maintainer.
 
