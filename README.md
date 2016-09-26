@@ -30,7 +30,7 @@ There are several packages that makeup the Dojo 2 platform:
 
 * [`dojo/actions`](https://github.com/dojo/actions) - A command like library for Dojo 2 applications
 * [`dojo/app`](https://github.com/dojo/app) - An application framework for Dojo 2
-* [dojo/cli](https://github.com/dojo/cli) - Command Line Tooling for Dojo 2 Applications
+* [`dojo/cli`](https://github.com/dojo/cli) - Command Line Tooling for Dojo 2 Applications
 * [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library
 * [`dojo/core`](https://github.com/dojo/core) - The foundational code of the Dojo 2 platform
 * `dojo/data` - A data querying, transformation and materialization library for Dojo 2
@@ -89,11 +89,13 @@ The following tables contain status information for the packages:
 |dojo/data| | | |*Proposal*| |
 |[dojo/i18n](https://github.com/dojo/i18n)| | | |*Prototype*| |
 
+
 #### Example app packages
 
 |Package|CI Status|Code Coverage|npm       |Stage|Maintainer|
 |-------|---------|-------------|----------|-----|----------|
 |[dojo/examples](https://github.com/dojo/examples)|[![Build Status](https://travis-ci.org/dojo/examples.svg?branch=master)](https://travis-ci.org/dojo/examples)|[![codecov.io](https://codecov.io/gh/dojo/examples/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/examples/branch/master)| | | |
+
 
 #### CLI Packages
 
@@ -104,6 +106,14 @@ into the CLI.
 |-------|---------|-------------|----------|-----|----------|
 |[dojo/cli-build](https://github.com/dojo/cli-build)|[![Build Status](https://travis-ci.org/dojo/cli-build.svg?branch=master)](https://travis-ci.org/dojo/cli-build)|[![codecov.io](https://codecov.io/gh/dojo/cli-build/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli-build.svg)](https://badge.fury.io/js/dojo-cli-build)|Prototype| |
 |[dojo/cli-create-app](https://github.com/dojo/cli-create-app)|[![Build Status](https://travis-ci.org/dojo/cli-create-app.svg?branch=master)](https://travis-ci.org/dojo/cli-create-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-app/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli-create-app.svg)](https://badge.fury.io/js/dojo-cli-create-app)|Prototype| |
+
+
+#### Internal packages
+
+|Package|CI Status|Code Coverage|npm       |Stage|Maintainer|
+|-------|---------|-------------|----------|-----|----------|
+|[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta| |
+
 
 #### Deprecated/proposed/internal packages
 
