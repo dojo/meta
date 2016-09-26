@@ -115,7 +115,7 @@ into the CLI.
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta| |
 
 
-#### Deprecated/proposed/internal packages
+#### Deprecated/proposed packages
 
 |Package|CI Status|Code Coverage|npm       |Stage|Maintainer|
 |-------|---------|-------------|----------|-----|----------|
