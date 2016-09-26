@@ -119,5 +119,5 @@ into the CLI.
 |Package|CI Status|Code Coverage|npm       |Stage|Maintainer|
 |-------|---------|-------------|----------|-----|----------|
 |[dojo/crypto](https://github.com/dojo/crypto)| | | |Proposal| |
-|dojo/data| | | |*Proposal*| |
+|dojo/data| | | |Proposal| |
 |~~[dojo/parser](https://github.com/dojo/parser)~~| | | |**Deprecated**|@kitsonk|
