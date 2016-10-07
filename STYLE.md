@@ -297,6 +297,18 @@ The following naming conventions SHOULD be used:
 
 1. `let self = this` MAY still be used instead if it enhances readability
 	(e.g. for preservation across multiple nested scopes).
+	
+1. `arguments.callee` MUST NOT be used.
+
+1. The `debugger` statement MUST NOT be used.
+
+1. The `eval` function MUST NOT be used.
+
+1. The `radix` parameter of `parseInt` MUST be used. 
+
+1. There MUST NOT be unreachable code after `break`, `catch`, `throw`, and `return` statements.
+
+1. All imports, variables, functions, and private class members MUST be used.
 
 #### TypeScript
 
@@ -337,6 +349,8 @@ The following naming conventions SHOULD be used:
 		return true;
 	}
 	```
+	
+1. Constructor parameters MUST NOT use `public` and `private` modifiers.
 
 ### Ordering
 
@@ -420,6 +434,8 @@ The following naming conventions SHOULD be used:
 1. Comments indicating areas to revisit SHOULD start with `TODO` or `FIXME` to make them easy to find.
 	Ideally, such comments should only ever appear in personal/feature branches,
 	but may be merged at maintainers' discretion.
+	
+1. Single line comments MUST begin with a space, i.e., `// comment` and not `//comment`.
 
 ### Whitespace and Formatting
 
@@ -430,7 +446,11 @@ The following naming conventions SHOULD be used:
 
 1. Files MUST end with a single newline character.
 
+1. Files MUST NOT have more than one consecutive blank line.
+
 1. Lines SHOULD NOT exceed 120 characters in length.
+
+1. Lines MUST NOT contain trailing whitespace.
 
 #### Semicolons
 
@@ -497,6 +517,8 @@ The following naming conventions SHOULD be used:
 
 	}
 	```
+	
+1. All `if`, `for`, `do`, `while` keywords MUST have opening and closing brackets.
 
 1. The opening and closing brackets on objects and arrays SHOULD be surrounded by
 	whitespace on the inside of the object literal:
@@ -597,3 +619,43 @@ The following naming conventions SHOULD be used:
 	do {
 	} while(baz)
 	```
+
+#### Labels
+
+1. Labels MUST only be used on `do`, `for`, `while` and `switch` statements.
+
+    ```ts
+    // right
+    loop:
+    for (let i = 0; i < 10; i++) {
+        break loop;
+    }
+    
+    // wrong
+    console:
+    console.log('1, 2, 3`);
+    ```
+    
+1. Labels MUST be defined before usage.
+
+   ```ts
+   // right
+    loop:
+    for (let i = 0; i < 10; i++) {
+        break loop;
+    }
+
+   // wrong
+    loop:
+    for (let i = 0; i < 10; i++) {
+        break loop;
+    }
+    
+    (function() {
+        for (let i = 0; i < 10; i++) {
+            // label out of scope
+            break loop;
+        }        
+    })();
+   
+   ```
