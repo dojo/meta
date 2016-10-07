@@ -48,6 +48,8 @@ Variables and parameter names generally SHOULD NOT be prefixed with underscores,
 but this may be warranted in rare cases where two variables in nested scopes
 make sense to have the same name, while avoiding shadowing the outer variable.
 
+The following naming conventions SHOULD be used:
+
 <table>
 	<tr>
 		<th>Variable type</th><th>Convention</th>
@@ -99,12 +101,12 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 	`h`).
 1. Names representing an interface MUST NOT use "I" as a prefix (e.g. `Event`
 	not `IEvent`).
-1. Abbreviations and acronyms MUST NOT be uppercase when used as a name (e.g.
+1. Abbreviations and acronyms SHOULD NOT be uppercase when used as a name (e.g.
 	`getXml` not `getXML`).
-1. Collections MUST be named using a plural form.
+1. Collections SHOULD be named using a plural form.
 1. Names representing boolean states SHOULD start with `is`, `has`, `can`, or
 	`should`.
-1. Names representing boolean states MUST NOT be negative (e.g. `isNotFoo` is
+1. Names representing boolean states SHOULD NOT be negative (e.g. `isNotFoo` is
 	unacceptable).
 1. Names representing a count of a number of objects SHOULD start with `num`.
 1. Names representing methods SHOULD be verbs or verb phrases (e.g.
@@ -118,7 +120,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 
 ### Variables
 
-1. All immutable variables MUST be declared with `const`:
+1. All immutable variables SHOULD be declared with `const`:
 
 	```ts
 	// right
@@ -131,7 +133,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 	let a = 1;
 	```
 
-1. All mutable variables MUST be declared with `let`:
+1. All mutable variables SHOULD be declared with `let`:
 
 	```ts
 	// right
@@ -145,7 +147,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 	}
 	```
 
-1. All variable declarations MUST use one `const` or `let` declaration per
+1. All variable declarations SHOULD use one `const` or `let` declaration per
 	variable. The exception to this rule is the initialization expression of
 	a `for` statement, and object/array destructuring (e.g. for imports).
 	This prevents variable declarations being lost inside long lists that may also include immediate assignments:
@@ -259,7 +261,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 
 1. Callbacks which need the execution context preserved SHOULD use arrow functions
 	(if they aren't already using `Function#bind` or `lang.lateBind`).
-	Arrow functions MUST include parentheses around parameters and curly braces around the function body
+	Arrow functions SHOULD include parentheses around parameters and curly braces around the function body
 	(i.e. implicit returns aren't allowed):
 
 	```ts
@@ -361,7 +363,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 	Module imports from the current package SHOULD come last.
 	Module imports SHOULD NOT be ordered by variable name, due to potential confusion when destructuring is involved.
 
-1. Functions MUST be declared before their use. The exceptions to this rule
+1. Functions SHOULD be declared before their use. The exceptions to this rule
 	are functions exported from a module and methods of a class:
 
 	```ts
@@ -394,7 +396,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 
 ### Comments
 
-1. Comments documenting methods MUST be written in JSDoc format.
+1. Comments documenting methods SHOULD be written in JSDoc format.
 	Type information SHOULD NOT be included, since it should be possible to pick up from function signatures.
 
 	Example:
@@ -434,17 +436,17 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 
 1. Semicolons MUST be used.
 
-1. Semicolons MUST NOT be preceded by a space.
+1. Semicolons SHOULD NOT be preceded by a space.
 
 1. Semicolons in `for` statements MUST be followed by a space.
 
 #### Commas
 
-1. Commas MUST be followed by a space or newline, and MUST NOT be preceded by a space.
+1. Commas SHOULD be followed by a space or newline, and MUST NOT be preceded by a space.
 
-1. Commas MUST NOT appear at the beginning of lines (i.e. no leading commas).
+1. Commas SHOULD NOT appear at the beginning of lines (i.e. no leading commas).
 
-1. All other binary/ternary operators MUST be surrounded by a space on both sides,
+1. All other binary/ternary operators SHOULD be surrounded by a space on both sides,
 	unless immediately followed by a newline, in which case the operator SHOULD *precede* the newline (except for `.`).
 
 #### Colons
@@ -452,46 +454,13 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 1. Colons in type definitions MUST be followed by a space or newline, and
 	MUST NOT be preceded by a space.
 
-1. Colons in object definitions MUST be followed by a space, and MUST NOT be preceded by a space.
+1. Colons in object definitions SHOULD be followed by a space, and MUST NOT be preceded by a space.
 
-1. Colons in `case` clauses MUST be followed by a newline, and MUST NOT be preceded by a space.
-	The body of each `case` clause must be indented one level deeper than the `case` clause, and MUST conclude with
+1. Colons in `case` clauses SHOULD be followed by a newline, and MUST NOT be preceded by a space.
+	The body of each `case` clause SHOULD be indented one level deeper than the `case` clause, and SHOULD conclude with
 	the `break` keyword or a `// fall through` comment.
 
 #### Braces, Brackets, and Parentheses
-
-1. The opening and closing brackets on objects and arrays MUST be surrounded by
-	whitespace on the inside of the object literal:
-
-	```ts
-	// right
-
-	let object = { foo: 'foo' };
-	let array = [ obj, 'foo' ];
-	let arrayOfObjects = [ { foo: 'foo' } ];
-
-	// wrong
-
-	let object = {foo: 'foo'};
-	let array = [obj, 'foo'];
-	let arrayOfObjects = [{foo: 'foo'}];
-	```
-
-1. Parentheses MUST NOT have space on the inside:
-
-	```ts
-	// right
-
-	if (foo) {
-		doSomething(foo);
-	}
-
-	// wrong
-
-	if ( foo ) {
-		doSomething( foo );
-	}
-	```
 
 1. Parentheses immediately preceding a block expression (e.g. `if`, `for`, `catch`)
 	MUST be surrounded by a space on each side:
@@ -504,27 +473,6 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 
 	// wrong
 	if(foo){
-	}
-	```
-
-1. Anonymous functions MUST have a space between the `function` keyword and the opening parenthesis;
-	named functions MUST NOT have a space between the function name and the opening parenthesis:
-
-	```ts
-	// right
-
-	function myFunction() {
-		return function () {
-
-		};
-	}
-
-	// wrong
-
-	function myFunction () {
-		return function() {
-
-		}
 	}
 	```
 
@@ -550,7 +498,61 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 	}
 	```
 
-1. Blocks with a single statement MUST NOT be written on the same line as the
+1. The opening and closing brackets on objects and arrays SHOULD be surrounded by
+	whitespace on the inside of the object literal:
+
+	```ts
+	// right
+
+	let object = { foo: 'foo' };
+	let array = [ obj, 'foo' ];
+	let arrayOfObjects = [ { foo: 'foo' } ];
+
+	// wrong
+
+	let object = {foo: 'foo'};
+	let array = [obj, 'foo'];
+	let arrayOfObjects = [{foo: 'foo'}];
+	```
+
+1. Parentheses SHOULD NOT have space on the inside:
+
+	```ts
+	// right
+
+	if (foo) {
+		doSomething(foo);
+	}
+
+	// wrong
+
+	if ( foo ) {
+		doSomething( foo );
+	}
+	```
+
+1. Anonymous functions SHOULD have a space between the `function` keyword and the opening parenthesis;
+	named functions SHOULD NOT have a space between the function name and the opening parenthesis:
+
+	```ts
+	// right
+
+	function myFunction() {
+		return function () {
+
+		};
+	}
+
+	// wrong
+
+	function myFunction () {
+		return function() {
+
+		}
+	}
+	```
+
+1. Blocks with a single statement SHOULD NOT be written on the same line as the
 	opening brace:
 
 	```ts
@@ -565,7 +567,7 @@ make sense to have the same name, while avoiding shadowing the outer variable.
 	if (foo) { bar; }
 	```
 
-1. `else` and `while` keywords MUST be on their own line, not cuddled with the
+1. `else` and `while` keywords SHOULD be on their own line, not cuddled with the
 	closing brace of the previous `if`/`do` block. This is consistent with the
 	use of all other block statements and allows comments to be placed
 	consistently before conditional statements, rather than sometimes-before,
