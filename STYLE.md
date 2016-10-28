@@ -414,9 +414,9 @@ The following naming conventions *SHOULD* be used:
 
 	|Block Tag|Notes|
 	|---------|-----|
-	|``@param`|Denotes an argument for a method or function.|
-	|``@return`|A description of the return value.|
-	|``@template`|A description of a generic slot.|
+	|`@param`|Denotes an argument for a method or function.|
+	|`@return`|A description of the return value.|
+	|`@template`|A description of a generic slot.|
 
 ### Comments
 
@@ -583,7 +583,7 @@ The following naming conventions *SHOULD* be used:
 	if (foo) { bar; }
 	```
 
-1. Chained methods, when cannot be expressed on a signle line, *SHOULD* line break before the next `.method` in
+1. Chained methods, when cannot be expressed on a single line, *SHOULD* line break before the next `.method` in
 	the chain, indented further than the original block:
 
 	```ts
