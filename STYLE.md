@@ -239,8 +239,36 @@ The following naming conventions *SHOULD* be used:
 	const fn = () => 'foo';
 	```
 
-1. `const self = this` *MAY* still be used instead if it enhances readability
-	(e.g. for preservation across multiple nested scopes).
+1. `this` typing *MUST* be used if accessing `this` and *SHOULD NOT* be typed as `any`.  Use of `const self = this;`
+	*SHOULD NOT* be used to scope arrow functions and *MAY* only be used when there is a need to preseve context across a
+	normal `function` or IIFC.
+
+	```ts
+	// correct
+
+	function foo(this: SomeType) {
+		this.arr.forEach((item) => {
+			if (this.doSomething(item)) {
+				console.log(item);
+			}
+		});
+	}
+
+	// incorrect
+
+	function foo(this: any) {
+		this.dangerous();
+	}
+
+	function foo() {
+		const self = this;
+		self.arr.forEach((item) => {
+			if (self.doSomething(item)) {
+				console.log(item);
+			}
+		});
+	}
+	```
 
 1. All code *SHOULD* assume it will run in *strict mode*.  ES Modules are always parsed in strict mode and TypeScript
 	will automatically emit modules with the `'use strict';` prolog to help ensure that compatability.
@@ -316,6 +344,8 @@ The following naming conventions *SHOULD* be used:
 	```
 
 1. Constructor parameters *MUST NOT* use `public` and `private` modifiers.
+
+1. Parameter flags `noImplicitAny`, `noImplicitThis` and `strictNullChecks` must be enabled.
 
 ### Ordering
 
