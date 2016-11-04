@@ -47,6 +47,7 @@ The following naming conventions *SHOULD* be used:
 	the sake of less typing, and *MUST* avoid unclear shortenings and
 	contractions (e.g. `MouseEventHandler`, not `MseEvtHdlr` or `hdl` or
 	`h`).
+1. Names *SHOULD* use American English (`en-us`) spelling.
 1. Names representing an interface *MUST NOT* use "I" as a prefix (e.g. `Event`
 	not `IEvent`).
 1. Abbreviations and acronyms *SHOULD NOT* be uppercase when used as a name (e.g.
