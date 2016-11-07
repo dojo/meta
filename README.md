@@ -107,7 +107,7 @@ into the CLI.
 |-------|---------|-------------|----------|-----|----------|
 |[dojo/cli-build](https://github.com/dojo/cli-build)|[![Build Status](https://travis-ci.org/dojo/cli-build.svg?branch=master)](https://travis-ci.org/dojo/cli-build)|[![codecov.io](https://codecov.io/gh/dojo/cli-build/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli-build.svg)](https://badge.fury.io/js/dojo-cli-build)|Prototype| |
 |[dojo/cli-create-app](https://github.com/dojo/cli-create-app)|[![Build Status](https://travis-ci.org/dojo/cli-create-app.svg?branch=master)](https://travis-ci.org/dojo/cli-create-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-app/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli-create-app.svg)](https://badge.fury.io/js/dojo-cli-create-app)|Alpha| |
-
+|[dojo/cli-css-typings](https://github.com/dojo/cli-css-typings)|[![Build Status](https://travis-ci.org/dojo/cli-css-typings.svg?branch=master)](https://travis-ci.org/dojo/cli-css-typings)|[![codecov.io](https://codecov.io/gh/dojo/cli-css-typings/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-css-typings/branch/master)|[![npm version](https://badge.fury.io/js/dojo-cli-css-typings.svg)](https://badge.fury.io/js/dojo-cli-css-typings)|Alpha| |
 
 #### Internal packages
 
