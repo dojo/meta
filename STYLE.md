@@ -642,6 +642,61 @@ The following naming conventions *SHOULD* be used:
 
 	```
 
+	*Note* Calls that can be clearly expressed on a single line *MAY* be placed on the first line
+	until reaching a point where the method needs to be expressed more fully:
+
+	```ts
+	// correct
+
+	const body = fetchResponse.text()
+		.then((text) => {
+			// do something with text
+		});
+
+	// correct
+
+	const body = fetchResponse
+		.text()
+		.then((text) => {
+			// do something with text
+		});
+
+	// incorrect
+
+	const body = fetchResponse.text().then((text) => {
+		// do something with text
+	});
+	```
+
+	*Note* If the first method call is a static method (like in `Promise.resolve()`) the opening
+	of the static method *MAY* be expressed on the first line of the statement:
+
+	```ts
+	// correct
+
+	const promise = Promise.resolve(() => {
+		// return some value
+	});
+
+	// correct
+
+	const promise = Promise
+		.resolve(() => {
+			// return some value
+		});
+
+	// incorrect
+
+	const promise = Promise.resolve(() => {
+		// return some value
+	})
+	.then((result) => {
+		// do something with result
+	});
+	```
+
+	The code *SHOULD* lean towards readability and clarity in these cases.
+
 1. `else` and `while` keywords *SHOULD* be on their own line, not cuddled with the
 	closing brace of the previous `if`/`do` block. This is consistent with the
 	use of all other block statements and allows comments to be placed
