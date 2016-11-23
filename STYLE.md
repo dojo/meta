@@ -614,8 +614,9 @@ The following naming conventions *SHOULD* be used:
 	if (foo) { bar; }
 	```
 
-1. Chained methods, when cannot be expressed on a single line, *SHOULD* line break before the next `.method` in
-	the chain, indented further than the original block:
+1. Chained methods, when cannot be expressed on a single line, *SHOULD* line break after the first
+	function call and before each subsequent function call in the chain, indented further than
+	the original block:
 
 	```ts
 	// correct
@@ -630,6 +631,11 @@ The following naming conventions *SHOULD* be used:
 			// do something with error
 		});
 
+	const body = fetchResponse.text()
+		.then((text) => {
+			// do something with text
+		});
+
 	// incorrect
 
 	const promise = new Promise.resolve(() => {
@@ -640,6 +646,18 @@ The following naming conventions *SHOULD* be used:
 		// do something with error
 	});
 
+	const promise = new Promise
+		.resolve(() => {
+			// return some value
+		})
+		.then((result) => {
+			// do something with result
+		});
+
+	const body = fetchResponse
+		.text().then((text) => {
+			// do something with text
+		});
 	```
 
 1. `else` and `while` keywords *SHOULD* be on their own line, not cuddled with the
