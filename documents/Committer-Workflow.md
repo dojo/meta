@@ -163,6 +163,9 @@ You should now be ready to push:
 ```sh
 $ git push
 ```
+## Importing Local Packages
+
+Read about [working with packages](./Developing-with-Packages.md) to streamline your local development.
 
 ## Publishing a Package on npm
 
