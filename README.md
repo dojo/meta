@@ -33,14 +33,14 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/cli`](https://github.com/dojo/cli) - Command Line Tooling for Dojo 2 Applications
 * [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library
 * [`dojo/core`](https://github.com/dojo/core) - The foundational code of the Dojo 2 platform
-* `dojo/data` - A data querying, transformation and materialization library for Dojo 2
 * [`dojo/dataviz`](https://github.com/dojo/dataviz) - A data vizualization library for Dojo 2
 * [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM
 * [`dojo/has`](https://github.com/dojo/has) - A feature detection library
 * [`dojo/loader`](https://github.com/dojo/loader) - A TypeScript based AMD loader
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/shim`](https://github.com/dojo/shim) - Modules that provide fills of ES6+ functionality
-* [`dojo/stores`](https://github.com/dojo/stores) - Data stores for Dojo 2
+* [`dojo/stores`](https://github.com/dojo/stores) - Data stores, quertying, transformation and materialization library
+* [`dojo/streams`](https://github.com/dojo/streams) - WHATWG Streams implementation
 * [`dojo/widgets`](https://github.com/dojo/widgets) - A set of rich UI elements
 
 We also have packages that are still in their planning stages and as such might not be part of the initial Dojo 2 release.
@@ -86,6 +86,7 @@ The following tables contain status information for the packages:
 |[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)](https://travis-ci.org/dojo/routing)|[![codecov.io](https://codecov.io/gh/dojo/routing/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/routing/branch/master)|[![npm version](https://badge.fury.io/js/dojo-routing.svg)](https://badge.fury.io/js/dojo-routing)|Alpha| |
 |[dojo/shim](https://github.com/dojo/shim)|[![Build Status](https://travis-ci.org/dojo/shim.svg?branch=master)](https://travis-ci.org/dojo/shim)|[![codecov.io](https://codecov.io/gh/dojo/shim/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/shim/branch/master)|[![npm version](https://badge.fury.io/js/dojo-shim.svg)](https://badge.fury.io/js/dojo-shim)|Beta|@kitsonk|
 |[dojo/stores](https://github.com/dojo/stores)|[![Build Status](https://travis-ci.org/dojo/stores.svg?branch=master)](https://travis-ci.org/dojo/stores)|[![codecov.io](https://codecov.io/gh/dojo/stores/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/stores/branch/master)|[![npm version](https://badge.fury.io/js/dojo-stores.svg)](https://badge.fury.io/js/dojo-stores)|Alpha|@maier49|
+|[dojo/streams](https://github.com/dojo/streams)|[![Build Status](https://travis-ci.org/dojo/streams.svg?branch=master)](https://travis-ci.org/dojo/streams)|[![codecov.io](https://codecov.io/gh/dojo/streams/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/streams/branch/master)|[![npm version](https://badge.fury.io/js/dojo-streams.svg)](https://badge.fury.io/js/dojo-streams)|Alpha|@rorticus|
 |[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](https://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/widgets/branch/master)|[![npm version](https://badge.fury.io/js/dojo-widgets.svg)](https://badge.fury.io/js/dojo-widgets)|Alpha|@kitsonk|
 
 
@@ -119,5 +120,4 @@ into the CLI.
 |Package|CI Status|Code Coverage|npm       |Stage|Maintainer|
 |-------|---------|-------------|----------|-----|----------|
 |[dojo/crypto](https://github.com/dojo/crypto)| | | |Proposal| |
-|dojo/data| | | |Proposal| |
 |~~[dojo/parser](https://github.com/dojo/parser)~~| | | |**Deprecated**| |
