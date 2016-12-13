@@ -21,8 +21,6 @@ In order to ensure that Dojo 2 is a solid set of JavaScript tools and libraries,
 In addition, there are some core runtime technologies that parts of Dojo 2 are built on:
 
 * [MaquetteJS](http://maquettejs.org/) a minimalistic virtual DOM built in TypeScript
-* [RxJS 5 Observables](https://github.com/ReactiveX/RxJS) an implementation of [ES Observable](https://zenparsing.github.io/es-observable/) built in TypeScript
-* [ImmutableJS](https://facebook.github.io/immutable-js/) immutable collections for JavaScript
 
 ## Packages
 
