@@ -41,7 +41,7 @@ There are several packages that makeup the Dojo 2 platform:
 
 We also have packages that are still in their planning stages and as such might not be part of the initial Dojo 2 release.
 
-* [`dojo/actions`](https://github.com/dojo/actions) - A command like library for Dojo 2 applicationsz
+* [`dojo/actions`](https://github.com/dojo/actions) - A command like library for Dojo 2 applications
 * [`dojo/app`](https://github.com/dojo/app) - An application framework for Dojo 2
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
 * [`dojo/dataviz`](https://github.com/dojo/dataviz) - A data vizualization library for Dojo 2
