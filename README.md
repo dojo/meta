@@ -45,10 +45,10 @@ We also have packages that are still in their planning stages and as such might 
 * [`dojo/app`](https://github.com/dojo/app) - An application framework for Dojo 2
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
 * [`dojo/dataviz`](https://github.com/dojo/dataviz) - A data vizualization library for Dojo 2
+* [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM
 
 We have some deprecated packages:
 
-* [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM
 * [`dojo/parser`](https://github.com/dojo/parser) - A HTML document parser for instantiating objects declaratively - *This is deprecated in lieu of functionality provided by `dojo/app`.*
 
 ### Examples
