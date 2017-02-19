@@ -125,3 +125,7 @@ into the CLI.
 |-------|
 |[dojo/parser](https://github.com/dojo/parser)|
 |[dojo/cli-css-typings](https://github.com/dojo/cli-css-typings)|
+
+## Licensing information
+
+© [JS Foundation](https://js.foundation/) & contributors. [New BSD](http://opensource.org/licenses/BSD-3-Clause) license.
