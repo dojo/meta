@@ -35,7 +35,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/loader`](https://github.com/dojo/loader) - A TypeScript based AMD loader
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/shim`](https://github.com/dojo/shim) - Modules that provide fills of ES6+ functionality
-* [`dojo/stores`](https://github.com/dojo/stores) - Data stores, quertying, transformation and materialization library
+* [`dojo/stores`](https://github.com/dojo/stores) - Data stores, querying, transformation and materialization library
 * [`dojo/streams`](https://github.com/dojo/streams) - WHATWG Streams implementation
 * [`dojo/widget-core`](https://github.com/dojo/widget-core) - The foundation code of Dojo 2 widgets
 * [`dojo/widgets`](https://github.com/dojo/widgets) - A set of rich UI elements
@@ -45,7 +45,7 @@ We also have packages that are still in their planning stages and as such might 
 * [`dojo/actions`](https://github.com/dojo/actions) - A command like library for Dojo 2 applications
 * [`dojo/app`](https://github.com/dojo/app) - An application framework for Dojo 2
 * [`dojo/crypto`](https://github.com/dojo/crypto) - A set of libraries to deal with cryptography
-* [`dojo/dataviz`](https://github.com/dojo/dataviz) - A data vizualization library for Dojo 2
+* [`dojo/dataviz`](https://github.com/dojo/dataviz) - A data visualization library for Dojo 2
 * [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM
 
 We have some deprecated packages:
