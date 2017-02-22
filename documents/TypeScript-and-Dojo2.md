@@ -20,6 +20,12 @@ The following items have been delivered that have potential impact on Dojo 2:
 
 |Item|Version|Issue|Reason|
 |----|-------|-----|------|
+|Generic type parameters|2.3|[Microsoft/TypeScript#2175](https://github.com/Microsoft/TypeScript/issues/2175)|Default values for generic type variables|
+[Async iterations and Generator down levelling]|2.3|[Microsoft/TypeScript#12346](https://github.com/Microsoft/TypeScript/pull/12346)|This allows us to support non-ES6+ |Mixins/Traits|2.2|[Microsoft/TypeScript#311](https://github.com/Microsoft/TypeScript/issues/311)|2.2|Ability to better support mixin type functionality via [Microsoft/TypeScript#13743](https://github.com/Microsoft/TypeScript/pull/13743), [Microsoft/TypeScript#13604](https://github.com/Microsoft/TypeScript/pull/13604), [Microsoft/TypeScript#13924](https://github.com/Microsoft/TypeScript/issues/13924), and [Microsoft/TypeScript#14017](https://github.com/Microsoft/TypeScript/issues/14017)|
+|`async`/`await` down levelling|2.1|[Microsoft/TypeScript#1664](https://github.com/Microsoft/TypeScript/issues/1664)|This allows us to support non-ES6+ environments with Dojo 2|
+|Supporting "partial" types|2.1|[Microsoft/TypeScript#4889](https://github.com/Microsoft/TypeScript/issues/4889)|Makes it easier to say that an interface implements some items from another interface|
+|ES8 Object property spread/rest|2.1|[Microsoft/TypeScript#2103](https://github.com/Microsoft/TypeScript/issues/2103)|Set to be ratified in ES8, this is available in TS2.1|
+environments with Dojo 2, as well as ES8 for await of|
 |Better Loader Plugin Support|2.0|[Microsoft/TypeScript#6615](https://github.com/Microsoft/TypeScript/issues/6615)|This allows us to properly type plugins.|
 |Function `this` typing|2.0|[Microsoft/TypeScript#3694](https://github.com/Microsoft/TypeScript/issues/3694)|There are several use cases in Dojo where typing `this` within a function will improve code safety|
 |Implicit index signatures|2.0|[Microsoft/TypeScript#7029](https://github.com/Microsoft/TypeScript/issues/7029)|Several of the Dojo 2 core APIs would benefit from being able to pass object literals without explicitly typing them|
@@ -29,12 +35,6 @@ The following items have been delivered that have potential impact on Dojo 2:
 |F-Bounded Polymorphism|1.8|[Microsoft/TypeScript#5949](https://github.com/Microsoft/TypeScript/issues/5949)|The ability for generics to refer to other generics within the same argument list addresses a couple challenges in Dojo 2|
 |Augmenting global type interfaces from within modules|1.8|[Microsoft/TypeScript#4166](https://github.com/Microsoft/TypeScript/issues/4166)|There are several instances when we are feature detecting within a module but need to alter the global interface as we shim in functionality|
 |`this` based type guards|1.8|[Microsoft/TypeScript#5906](https://github.com/Microsoft/TypeScript/issues/5906)|Accepting a polymorphic `this` as a type guard solves some use cases in Dojo 2|
-|`async`/`await` down levelling|2.1|[Microsoft/TypeScript#1664](https://github.com/Microsoft/TypeScript/issues/1664)|This allows us to support non-ES6+ environments with Dojo 2|
-|Supporting "partial" types|2.1|[Microsoft/TypeScript#4889](https://github.com/Microsoft/TypeScript/issues/4889)|Makes it easier to say that an interface implements some items from another interface|
-|Mixins/Traits|[Microsoft/TypeScript#311](https://github.com/Microsoft/TypeScript/issues/311)|2.2|Ability to better support mixin type functionality via [Microsoft/TypeScript#13743](https://github.com/Microsoft/TypeScript/pull/13743), [Microsoft/TypeScript#13604](https://github.com/Microsoft/TypeScript/pull/13604), [Microsoft/TypeScript#13924](https://github.com/Microsoft/TypeScript/issues/13924), and [Microsoft/TypeScript#14017](https://github.com/Microsoft/TypeScript/issues/14017)|
-|ES8 Object property spread/rest|2.1|[Microsoft/TypeScript#2103](https://github.com/Microsoft/TypeScript/issues/2103)|Set to be ratified in ES8, this is available in TS2.1|
-|Generic type parameters|2.3|[Microsoft/TypeScript#2175](https://github.com/Microsoft/TypeScript/issues/2175)|Default values for generic type variables|
-[Async iterations and Generator down levelling]2.3|[Microsoft/TypeScript#12346](https://github.com/Microsoft/TypeScript/pull/12346)|This allows us to support non-ES6+ environments with Dojo 2, as well as ES8 for await of|
 
 
 ## Uncomitted Issues
