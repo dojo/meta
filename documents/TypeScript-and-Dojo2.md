@@ -13,6 +13,7 @@ The following table lists TypeScript roadmap items or issues that are of interes
 |Conditional Decorators|*?*|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript|
 |Support for project references|*?*|[Microsoft/TypeScript#3469](https://github.com/Microsoft/TypeScript/issues/3469)|Allow multiple TypeScript only projects/packages to work together without having to use transpiled code|
 |Granular Targetting|*?*|[Microsoft/TypeScript#4692](https://github.com/Microsoft/TypeScript/issues/4692)|Makes it easier to target specific platforms that might have support for many ES6+ features, this requires [Microsoft/TypeScript#6974](https://github.com/Microsoft/TypeScript/issues/6974) first, which is targeted for 2.0|
+|ESNext import()|*?*|[Microsoft/TypeScript#14495](https://github.com/Microsoft/TypeScript/issues/14495)|Allows Dojo to support dynamic import statements per the ESM update in ES8 or ES9|
 
 ## Delivered Roadmap Items
 
