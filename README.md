@@ -1,3 +1,7 @@
+<p align="center">
+	<img src="//github.com/dojo/meta/blob/master/images/Dojo-New.png?raw=true" alt="Dojo Logo" height="128" width="128" />
+</p>
+
 # dojo-meta
 
 [![Join the chat at https://gitter.im/dojo/dojo2](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dojo/dojo2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
