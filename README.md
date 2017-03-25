@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="//github.com/dojo/meta/blob/master/images/Dojo-New.png?raw=true" alt="Dojo Logo" height="128" width="128" />
+	<img src="//raw.githubusercontent.com/dojo/meta/master/images/Dojo-New.png" alt="Dojo Logo" height="128" width="128" />
 </p>
 
 # dojo-meta
