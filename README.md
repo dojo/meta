@@ -104,6 +104,16 @@ into the CLI.
 |[dojo/cli-create-app](https://github.com/dojo/cli-create-app)|[![Build Status](https://travis-ci.org/dojo/cli-create-app.svg?branch=master)](https://travis-ci.org/dojo/cli-create-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-app/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-app.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-app)|Beta1|
 |[dojo/cli-test-intern](https://github.com/dojo/cli-test-intern)|[![Build Status](https://travis-ci.org/dojo/cli-test-intern.svg?branch=master)](https://travis-ci.org/dojo/cli-test-intern)|[![codecov.io](https://codecov.io/gh/dojo/cli-test-intern/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-test-intern/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-test-intern.svg)](https://badge.fury.io/js/%40dojo%2Fcli-test-intern)|Beta1|
 
+#### Support Packages
+
+In addition to `dojo/cli` there are some packages which are designed to be used both by the Dojo 2 team internally, but also
+others who are developing Dojo 2 applications:
+
+|Package|CI Status|Code Coverage|npm       |Stage|
+|-------|---------|-------------|----------|-----|
+|[dojo/test-extras](https://github.com/dojo/test-extras/)|[![Build Status](https://travis-ci.org/dojo/test-extras.svg?branch=master)](https://travis-ci.org/dojo/test-extras)|[![codecov.io](https://codecov.io/gh/dojo/test-extras/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/test-extras/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Ftest-extras.svg)](https://badge.fury.io/js/%40dojo%2Ftest-extras)|Alpha|
+
+
 #### Proposed packages
 
 |Package|CI Status|Code Coverage|
@@ -125,7 +135,6 @@ into the CLI.
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta1|
-|[dojo/test-extras](https://github.com/dojo/test-extras/)|[![Build Status](https://travis-ci.org/dojo/test-extras.svg?branch=master)](https://travis-ci.org/dojo/test-extras)|[![codecov.io](https://codecov.io/gh/dojo/test-extras/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/test-extras/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Ftest-extras.svg)](https://badge.fury.io/js/%40dojo%2Ftest-extras)|Alpha|
 
 #### Deprecated packages
 
