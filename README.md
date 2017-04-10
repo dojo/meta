@@ -68,7 +68,7 @@ There are several packages which are designed to support the Dojo 2 platform:
 
 * [dojo/dojo2-package-template](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
 * [dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
-* [dojo/intern-helper](https://github.com/dojo/intern-helper) - A set of modules to help with testing Dojo 2 with Intern
+* [dojo/test-extras](https://github.com/dojo/test-extras) - A set of modules to help with testing Dojo 2
 
 These packages are aimed at Dojo 2 contributors rather than Dojo 2 end users.
 
@@ -83,7 +83,7 @@ The following tables contain status information for the packages:
 |[dojo/core](https://github.com/dojo/core)|[![Build Status](https://travis-ci.org/dojo/core.svg?branch=master)](https://travis-ci.org/dojo/core)|[![codecov.io](https://codecov.io/gh/dojo/core/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/core/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcore.svg)](https://badge.fury.io/js/%40dojo%2Fcore)|Beta1|
 |[dojo/dgrid](https://github.com/dojo/dgrid)|[![Build Status](https://travis-ci.org/dojo/dgrid.svg?branch=master)](https://travis-ci.org/dojo/dgrid)|[![codecov.io](https://codecov.io/gh/dojo/dgrid/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/dgrid/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fdgrid.svg)](https://badge.fury.io/js/%40dojo%2Fdgrid)|Alpha|
 |[dojo/has](https://github.com/dojo/has)|[![Build Status](https://travis-ci.org/dojo/has.svg?branch=master)](https://travis-ci.org/dojo/has)|[![codecov.io](https://codecov.io/gh/dojo/has/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/has/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fhas.svg)](https://badge.fury.io/js/%40dojo%2Fhas)|Beta1|
-|[dojo/interfaces](https://github.com/dojo/interfaces)|[![Build Status](https://travis-ci.org/dojo/interfaces.svg?branch=master)](https://travis-ci.org/dojo/interfaces)|[![codecov.io](https://codecov.io/gh/dojo/interfaces/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/interfaces/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Finterfaces.svg)](https://badge.fury.io/js/%40dojo%2Finterfaces)|Beta1|
+|[dojo/interfaces](https://github.com/dojo/interfaces)|[![Build Status](https://travis-ci.org/dojo/interfaces.svg?branch=master)](https://travis-ci.org/dojo/interfaces)| |[![npm version](https://badge.fury.io/js/%40dojo%2Finterfaces.svg)](https://badge.fury.io/js/%40dojo%2Finterfaces)|Beta1|
 |[dojo/i18n](https://github.com/dojo/i18n)|[![Build Status](https://travis-ci.org/dojo/i18n.svg?branch=master)](https://travis-ci.org/dojo/i18n)|[![codecov.io](https://codecov.io/gh/dojo/i18n/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/i18n/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fi18n.svg)](https://badge.fury.io/js/%40dojo%2Fi18n)|Beta1|
 |[dojo/loader](https://github.com/dojo/loader)|[![Build Status](https://travis-ci.org/dojo/loader.svg?branch=master)](https://travis-ci.org/dojo/loader)|[![codecov.io](https://codecov.io/gh/dojo/loader/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/loader/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Floader.svg)](https://badge.fury.io/js/%40dojo%2Floader)|Beta1|
 |[dojo/routing](https://github.com/dojo/routing)|[![Build Status](https://travis-ci.org/dojo/routing.svg?branch=master)](https://travis-ci.org/dojo/routing)|[![codecov.io](https://codecov.io/gh/dojo/routing/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/routing/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Frouting.svg)](https://badge.fury.io/js/%40dojo%2Frouting)|Beta1|
@@ -125,7 +125,7 @@ into the CLI.
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta1|
-|[dojo/intern-helper](https://github.com/dojo/intern-helper/)|[![Build Status](https://travis-ci.org/dojo/intern-helper.svg?branch=master)](https://travis-ci.org/dojo/intern-helper)|[![codecov.io](https://codecov.io/gh/dojo/intern-helper/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/intern-helper/branch/master)| |Alpha|
+|[dojo/test-extras](https://github.com/dojo/test-extras/)|[![Build Status](https://travis-ci.org/dojo/test-extras.svg?branch=master)](https://travis-ci.org/dojo/test-extras)|[![codecov.io](https://codecov.io/gh/dojo/test-extras/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/test-extras/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Ftest-extras.svg)](https://badge.fury.io/js/%40dojo%2Ftest-extras)|Alpha|
 
 #### Deprecated packages
 
