@@ -73,7 +73,9 @@ There are several packages which are designed to support the Dojo 2 platform:
 
 * [dojo/dojo2-package-template](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
 * [dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
+* [dojo/grunt-dojo2-extras](https://github.com/dojo/grunt-dojo2-extras) - Additional tasks and code supporting continuous delivery with Dojo 2 packages.
 * [dojo/test-extras](https://github.com/dojo/test-extras) - A set of modules to help with testing Dojo 2
+* [dojo/web-editor](https://github.com/dojo/web-editor) - A web editor that can run projects exported from `cli-export-project`
 
 These packages are aimed at Dojo 2 contributors rather than Dojo 2 end users.
 
@@ -118,6 +120,7 @@ others who are developing Dojo 2 applications:
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
 |[dojo/test-extras](https://github.com/dojo/test-extras/)|[![Build Status](https://travis-ci.org/dojo/test-extras.svg?branch=master)](https://travis-ci.org/dojo/test-extras)|[![codecov.io](https://codecov.io/gh/dojo/test-extras/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/test-extras/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Ftest-extras.svg)](https://badge.fury.io/js/%40dojo%2Ftest-extras)|Alpha|
+|[dojo/web-editor](https://github.com/dojo/web-editor/)|[![Build Status](https://travis-ci.org/dojo/web-editor.svg?branch=master)](https://travis-ci.org/dojo/web-editor)|[![codecov.io](https://codecov.io/gh/dojo/web-editor/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/web-editor/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fweb-editor.svg)](https://badge.fury.io/js/%40dojo%2Fweb-editor)|Alpha|
 
 
 #### Proposed packages
@@ -141,6 +144,7 @@ others who are developing Dojo 2 applications:
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta1|
+|[dojo/grunt-dojo2-extras](https://github.com/dojo/grunt-dojo2-extras/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2-extras.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2-extras)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2-extras/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2-extras/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2-extras.svg)](https://badge.fury.io/js/grunt-dojo2-extras)|Alpha|
 
 #### Deprecated packages
 
