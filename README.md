@@ -58,8 +58,8 @@ We also have packages that are still in their planning stages and as such might 
 
 We have some deprecated packages:
 
-* [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library
-* [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM
+* [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library - *This is deprecated because TypeScript now offers mixin behaviour*
+* [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM - *This is deprecated because Dojo 2 will fully abstract away DOM access.*
 * [`dojo/parser`](https://github.com/dojo/parser) - A HTML document parser for instantiating objects declaratively - *This is deprecated in lieu of functionality provided by `dojo/app`.*
 
 ### Examples
