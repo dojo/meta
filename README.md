@@ -40,8 +40,6 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/core`](https://github.com/dojo/core) - The foundational code of the Dojo 2 platform
 * [`dojo/dgrid`](https://github.com/dojo/dgrid) - Reactive extensive grid for Dojo 2
 * [`dojo/has`](https://github.com/dojo/has) - A feature detection library
-* [`dojo/interfaces`](https://github.com/dojo/interfaces) - Common interfaces and types for Dojo 2
-* [`dojo/i18n`](https://github.com/dojo/i18n) - A set of internationalization tooling
 * [`dojo/loader`](https://github.com/dojo/loader) - A TypeScript based AMD loader
 * [`dojo/routing`](https://github.com/dojo/routing) - A routing service to build web applications with
 * [`dojo/shim`](https://github.com/dojo/shim) - Modules that provide fills of ES6+ functionality
