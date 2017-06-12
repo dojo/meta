@@ -6,14 +6,14 @@ The following table lists TypeScript roadmap items or issues that are of interes
 
 |Item|Version|Issue|Reason|
 |----|-------|-----|------|
-|Language Service Plugins|2.3|[Microsoft/TypeScript#12231](https://github.com/Microsoft/TypeScript/pull/12231)|Easier to extend TypeScript language services with additional capabilities|
+|ESNext import()|2.4|[Microsoft/TypeScript#14495](https://github.com/Microsoft/TypeScript/issues/14495)|Allows Dojo to support dynamic import statements per the ESM update in ES8 or ES9|
+|Stricter generic checks|2.4|[Microsoft/TypeScript#16368](https://github.com/Microsoft/TypeScript/pull/16368)|Better contraints on generic checking helps eliminate design time errors|
+|Weak Type Detection|2.4|[Microsoft/TypeScript#16047](https://github.com/Microsoft/TypeScript/pull/16047)|Weak types are properly detected and constrained.  Helps eliminate errors in code where an object has all optional properties, one of the things we have been challenged with in real world code|
+|Generic rest/spread|2.5|[Microsoft/TypeScript#10727](https://github.com/Microsoft/TypeScript/issues/10727)|It is part of the path to variadic kinds and we often model types that would benefit from rest/spread|
 |Variadic Kinds|*?*|[Microsoft/TypeScript#5453](https://github.com/Microsoft/TypeScript/issues/5453) and [Microsoft/TypeScript#9366](https://github.com/Microsoft/TypeScript/issues/9366)|Currently, there are use cases with mixins where aggregating types is necessary|
-|Generic rest/spread|*?*|[Microsoft/TypeScript#10727](https://github.com/Microsoft/TypeScript/issues/10727)|While not currently tagged to a release, generic rest/spread is part of the path to variadic kinds|
 |Ambient Decorators|*?*|[Microsoft/TypeScript#2900](https://github.com/Microsoft/TypeScript/issues/2900)|The ability to programatically access typing information is important|
-|Conditional Decorators|*?*|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript|
+|Conditional Decorators|*?*|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript.  We do think though that our approach to WebPack would be able to effiently achieve this without needing to change the emit.|
 |Support for project references|*?*|[Microsoft/TypeScript#3469](https://github.com/Microsoft/TypeScript/issues/3469)|Allow multiple TypeScript only projects/packages to work together without having to use transpiled code|
-|Granular Targetting|*?*|[Microsoft/TypeScript#4692](https://github.com/Microsoft/TypeScript/issues/4692)|Makes it easier to target specific platforms that might have support for many ES6+ features, this requires [Microsoft/TypeScript#6974](https://github.com/Microsoft/TypeScript/issues/6974) first, which is targeted for 2.0|
-|ESNext import()|*?*|[Microsoft/TypeScript#14495](https://github.com/Microsoft/TypeScript/issues/14495)|Allows Dojo to support dynamic import statements per the ESM update in ES8 or ES9|
 
 ## Delivered Roadmap Items
 
@@ -23,10 +23,12 @@ The following items have been delivered that have potential impact on Dojo 2:
 |----|-------|-----|------|
 |Generic type parameters|2.3|[Microsoft/TypeScript#2175](https://github.com/Microsoft/TypeScript/issues/2175)|Default values for generic type variables|
 [Async iterations and Generator down levelling]|2.3|[Microsoft/TypeScript#12346](https://github.com/Microsoft/TypeScript/pull/12346)|This allows us to support non-ES6+ environments with Dojo 2, as well as ES8 for await of|
+|Language Service Plugins|2.3|[Microsoft/TypeScript#12231](https://github.com/Microsoft/TypeScript/pull/12231)|Easier to extend TypeScript language services with additional capabilities|
 |Mixins/Traits|2.2|[Microsoft/TypeScript#311](https://github.com/Microsoft/TypeScript/issues/311)|Ability to better support mixin type functionality via [Microsoft/TypeScript#13743](https://github.com/Microsoft/TypeScript/pull/13743), [Microsoft/TypeScript#13604](https://github.com/Microsoft/TypeScript/pull/13604), [Microsoft/TypeScript#13924](https://github.com/Microsoft/TypeScript/issues/13924), and [Microsoft/TypeScript#14017](https://github.com/Microsoft/TypeScript/issues/14017)|
 |`async`/`await` down levelling|2.1|[Microsoft/TypeScript#1664](https://github.com/Microsoft/TypeScript/issues/1664)|This allows us to support non-ES6+ environments with Dojo 2|
 |Supporting "partial" types|2.1|[Microsoft/TypeScript#4889](https://github.com/Microsoft/TypeScript/issues/4889)|Makes it easier to say that an interface implements some items from another interface|
 |ES8 Object property spread/rest|2.1|[Microsoft/TypeScript#2103](https://github.com/Microsoft/TypeScript/issues/2103)|Set to be ratified in ES8, this is available in TS2.1|
+|`lib` modularization|2.0|[Microsoft/TypeScript#6974](https://github.com/Microsoft/TypeScript/issues/6974)|While there was a broader issue around ganular targetting, the `lib` feature has allowed us to meet our needs.|
 |Better Loader Plugin Support|2.0|[Microsoft/TypeScript#6615](https://github.com/Microsoft/TypeScript/issues/6615)|This allows us to properly type plugins.|
 |Function `this` typing|2.0|[Microsoft/TypeScript#3694](https://github.com/Microsoft/TypeScript/issues/3694)|There are several use cases in Dojo where typing `this` within a function will improve code safety|
 |Implicit index signatures|2.0|[Microsoft/TypeScript#7029](https://github.com/Microsoft/TypeScript/issues/7029)|Several of the Dojo 2 core APIs would benefit from being able to pass object literals without explicitly typing them|
@@ -45,4 +47,4 @@ The following table lists issues that are important to Dojo 2, but the TypeScrip
 |Item|Issue|Reason|
 |----|-----|------|
 |`this` as a Generic Argument|[Microsoft/TypeScript#6223](https://github.com/Microsoft/TypeScript/issues/6223)|Polymorphic `this` is a legitimate way of type guarding on extended/composed classes|
-|Programmatically Modifying Types|[Microsoft/TypeScript#4490](https://github.com/Microsoft/TypeScript/issues/4490)|Revisit, with mixins being easier to achieve we may not need this|
+|Programmatically Modifying Types|[Microsoft/TypeScript#4490](https://github.com/Microsoft/TypeScript/issues/4490)|Revisit, with mixins being easier to achieve we may not need this.  There have been a lot of improvements though to model things like `Partial` and `Readonly`, though having ways of modifying types would solve _all_ use cases, but at a risk of instability of the type system.|
