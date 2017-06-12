@@ -10,11 +10,11 @@ The following table lists TypeScript roadmap items or issues that are of interes
 |Stricter generic checks|2.4|[Microsoft/TypeScript#16368](https://github.com/Microsoft/TypeScript/pull/16368)|Better contraints on generic checking helps eliminate design time errors|
 |Weak Type Detection|2.4|[Microsoft/TypeScript#16047](https://github.com/Microsoft/TypeScript/pull/16047)|Weak types are properly detected and constrained.  Helps eliminate errors in code where an object has all optional properties, one of the things we have been challenged with in real world code|
 |Generic rest/spread|2.5|[Microsoft/TypeScript#10727](https://github.com/Microsoft/TypeScript/issues/10727)|It is part of the path to variadic kinds and we often model types that would benefit from rest/spread|
-|Variadic Kinds|*?*|[Microsoft/TypeScript#5453](https://github.com/Microsoft/TypeScript/issues/5453) and [Microsoft/TypeScript#9366](https://github.com/Microsoft/TypeScript/issues/9366)|Currently, there are use cases with mixins where aggregating types is necessary|
+|Variadic Kinds|*?*|[Microsoft/TypeScript#5453](https://github.com/Microsoft/TypeScript/issues/5453)|Currently, there are use cases with mixins where aggregating types is necessary|
+|Support generic type inferrence over higher order functions|*?*|[Microsoft/TypeScript#9366](https://github.com/Microsoft/TypeScript/issues/9366)|While [Microsoft/TypeScript#16072](https://github.com/Microsoft/TypeScript/pull/16072) for 2.4 is a partial solution, there are still situations where we get "stuck" with the type system modelling some higher order functions.|
 |Ambient Decorators|*?*|[Microsoft/TypeScript#2900](https://github.com/Microsoft/TypeScript/issues/2900)|The ability to programatically access typing information is important|
 |Conditional Decorators|*?*|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript.  We do think though that our approach to WebPack would be able to effiently achieve this without needing to change the emit.|
 |Support for project references|*?*|[Microsoft/TypeScript#3469](https://github.com/Microsoft/TypeScript/issues/3469)|Allow multiple TypeScript only projects/packages to work together without having to use transpiled code|
-|Support generic type inferrence over higher order functions|*?*|[Microsoft/TypeScript](https://github.com/Microsoft/TypeScript/issues/9366)|While [Microsoft/TypeScript#16072](https://github.com/Microsoft/TypeScript/pull/16072) for 2.4 is a partial solution, there are still situations where we get "stuck" with the type system modelling some higher order functions.|
 
 ## Delivered Roadmap Items
 
