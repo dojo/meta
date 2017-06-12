@@ -14,6 +14,7 @@ The following table lists TypeScript roadmap items or issues that are of interes
 |Ambient Decorators|*?*|[Microsoft/TypeScript#2900](https://github.com/Microsoft/TypeScript/issues/2900)|The ability to programatically access typing information is important|
 |Conditional Decorators|*?*|[Microsoft/TypeScript#3538](https://github.com/Microsoft/TypeScript/issues/3538)|Essentially allows the equivilent of the Dojo `has()` API built into TypeScript.  We do think though that our approach to WebPack would be able to effiently achieve this without needing to change the emit.|
 |Support for project references|*?*|[Microsoft/TypeScript#3469](https://github.com/Microsoft/TypeScript/issues/3469)|Allow multiple TypeScript only projects/packages to work together without having to use transpiled code|
+|Support generic type inferrence over higher order functions|*?*|[Microsoft/TypeScript](https://github.com/Microsoft/TypeScript/issues/9366)|While [Microsoft/TypeScript#16072](https://github.com/Microsoft/TypeScript/pull/16072) for 2.4 is a partial solution, there are still situations where we get "stuck" with the type system modelling some higher order functions.|
 
 ## Delivered Roadmap Items
 
