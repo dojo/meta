@@ -6,9 +6,6 @@ The following table lists TypeScript roadmap items or issues that are of interes
 
 |Item|Version|Issue|Reason|
 |----|-------|-----|------|
-|ESNext import()|2.4|[Microsoft/TypeScript#14495](https://github.com/Microsoft/TypeScript/issues/14495)|Allows Dojo to support dynamic import statements per the ESM update in ES8 or ES9|
-|Stricter generic checks|2.4|[Microsoft/TypeScript#16368](https://github.com/Microsoft/TypeScript/pull/16368)|Better contraints on generic checking helps eliminate design time errors|
-|Weak Type Detection|2.4|[Microsoft/TypeScript#16047](https://github.com/Microsoft/TypeScript/pull/16047)|Weak types are properly detected and constrained.  Helps eliminate errors in code where an object has all optional properties, one of the things we have been challenged with in real world code|
 |Generic rest/spread|2.5|[Microsoft/TypeScript#10727](https://github.com/Microsoft/TypeScript/issues/10727)|It is part of the path to variadic kinds and we often model types that would benefit from rest/spread|
 |Variadic Kinds|*?*|[Microsoft/TypeScript#5453](https://github.com/Microsoft/TypeScript/issues/5453)|Currently, there are use cases with mixins where aggregating types is necessary|
 |Support generic type inferrence over higher order functions|*?*|[Microsoft/TypeScript#9366](https://github.com/Microsoft/TypeScript/issues/9366)|While [Microsoft/TypeScript#16072](https://github.com/Microsoft/TypeScript/pull/16072) for 2.4 is a partial solution, there are still situations where we get "stuck" with the type system modelling some higher order functions.|
@@ -22,6 +19,9 @@ The following items have been delivered that have potential impact on Dojo 2:
 
 |Item|Version|Issue|Reason|
 |----|-------|-----|------|
+|ESNext import()|2.4|[Microsoft/TypeScript#14495](https://github.com/Microsoft/TypeScript/issues/14495)|Allows Dojo to support dynamic import statements per the ESM update in ES8 or ES9|
+|Stricter generic checks|2.4|[Microsoft/TypeScript#16368](https://github.com/Microsoft/TypeScript/pull/16368)|Better contraints on generic checking helps eliminate design time errors|
+|Weak Type Detection|2.4|[Microsoft/TypeScript#16047](https://github.com/Microsoft/TypeScript/pull/16047)|Weak types are properly detected and constrained.  Helps eliminate errors in code where an object has all optional properties, one of the things we have been challenged with in real world code|
 |Generic type parameters|2.3|[Microsoft/TypeScript#2175](https://github.com/Microsoft/TypeScript/issues/2175)|Default values for generic type variables|
 [Async iterations and Generator down levelling]|2.3|[Microsoft/TypeScript#12346](https://github.com/Microsoft/TypeScript/pull/12346)|This allows us to support non-ES6+ environments with Dojo 2, as well as ES8 for await of|
 |Language Service Plugins|2.3|[Microsoft/TypeScript#12231](https://github.com/Microsoft/TypeScript/pull/12231)|Easier to extend TypeScript language services with additional capabilities|
@@ -47,5 +47,6 @@ The following table lists issues that are important to Dojo 2, but the TypeScrip
 
 |Item|Issue|Reason|
 |----|-----|------|
+|Annotate immediately-invoked functions for CFA|[Microsoft/TypeScript#11498](https://github.com/Microsoft/TypeScript/issues/11498)|We have several redundant guards in callbacks because narrowing gets reset in function scope, though we know the callback will be invoked in turn|
 |`this` as a Generic Argument|[Microsoft/TypeScript#6223](https://github.com/Microsoft/TypeScript/issues/6223)|Polymorphic `this` is a legitimate way of type guarding on extended/composed classes|
 |Programmatically Modifying Types|[Microsoft/TypeScript#4490](https://github.com/Microsoft/TypeScript/issues/4490)|Revisit, with mixins being easier to achieve we may not need this.  There have been a lot of improvements though to model things like `Partial` and `Readonly`, though having ways of modifying types would solve _all_ use cases, but at a risk of instability of the type system.|
