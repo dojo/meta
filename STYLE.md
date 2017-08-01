@@ -208,7 +208,7 @@ The following naming conventions *SHOULD* be used:
 	let myString = new String(something);
 	```
 
-1. When using a *literal function*, an anonymous function that is being passed as an argument, arrow functions *SHOULD*
+1. When passing an anonymous function as an argument, arrow functions *SHOULD*
 	be used. Implicit returns from arrow functions are allowed if they increase the code readability and the return
 	value is not ignored:
 
@@ -226,7 +226,7 @@ The following naming conventions *SHOULD* be used:
 	[ 1, 2, 3 ].forEach((value) => console.log(value));
 	```
 
-1. When functions are not *literal functions*, arrow functions *SHOULD NOT* be used:
+1. When functions are not anonymous arguments to a function, arrow functions *SHOULD NOT* be used:
 
 	```ts
 	// correct
