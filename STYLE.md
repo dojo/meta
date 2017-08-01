@@ -208,7 +208,7 @@ The following naming conventions *SHOULD* be used:
 	let myString = new String(something);
 	```
 
-1. When passing an anonymour function as an argument, arrow functions *SHOULD*
+1. When passing an anonymous function as an argument, arrow functions *SHOULD*
 	be used. Implicit returns from arrow functions are allowed if they increase the code readability and the return
 	value is not ignored:
 
