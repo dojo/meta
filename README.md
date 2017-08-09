@@ -74,10 +74,11 @@ There are several packages which are designed to support the Dojo 2 platform:
 * [dojo/dojo2-package-template](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
 * [dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
 * [dojo/grunt-dojo2-extras](https://github.com/dojo/grunt-dojo2-extras) - Additional tasks and code supporting continuous delivery with Dojo 2 packages.
+* [dojo/static-optimize-plugin](https://github.com/dojo/static-optimize-plugin) - A webpack plugin which allows code to be statically optimized for a particular context at bundling time.
 * [dojo/test-extras](https://github.com/dojo/test-extras) - A set of modules to help with testing Dojo 2
 * [dojo/web-editor](https://github.com/dojo/web-editor) - A web editor that can run projects exported from `cli-export-project`
 
-These packages are aimed at Dojo 2 contributors rather than Dojo 2 end users.
+These packages are aimed at Dojo 2 contributors and those building custom development pipelines rather than Dojo 2 end users.
 
 ### Status
 
@@ -110,6 +111,14 @@ into the CLI.
 |[dojo/cli-create-app](https://github.com/dojo/cli-create-app)|[![Build Status](https://travis-ci.org/dojo/cli-create-app.svg?branch=master)](https://travis-ci.org/dojo/cli-create-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-app/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-app.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-app)|Beta1|
 |[dojo/cli-export-project](https://github.com/dojo/cli-export-project)|[![Build Status](https://travis-ci.org/dojo/cli-export-project.svg?branch=master)](https://travis-ci.org/dojo/cli-export-project)|[![codecov.io](https://codecov.io/gh/dojo/cli-export-project/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-export-project/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-export-project.svg)](https://badge.fury.io/js/%40dojo%2Fcli-export-project)|Alpha|
 |[dojo/cli-test-intern](https://github.com/dojo/cli-test-intern)|[![Build Status](https://travis-ci.org/dojo/cli-test-intern.svg?branch=master)](https://travis-ci.org/dojo/cli-test-intern)|[![codecov.io](https://codecov.io/gh/dojo/cli-test-intern/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-test-intern/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-test-intern.svg)](https://badge.fury.io/js/%40dojo%2Fcli-test-intern)|Beta1|
+
+#### Enhancements and Extensions
+
+These are packages which provide extended functionality, usually to other tools, which are used by Dojo 2.  For those using the _out of the box_ tooling, there is little value in these packages, but for those having to integrate Dojo 2 into an existing development pipeline, these packages are likely to be of use.
+
+|Package|CI Status|Code Coverage|npm       |Stage|
+|-------|---------|-------------|----------|-----|
+|[dojo/static-optimize-plugin](https://github.com/dojo/static-optimize-plugin)|[![Build Status](https://travis-ci.org/dojo/static-optimize-plugin.svg?branch=master)](https://travis-ci.org/dojo/static-optimize-plugin)|[![codecov.io](https://codecov.io/gh/dojo/static-optimize-plugin/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/static-optimize-plugin/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fstatic-optimize-plugin.svg)](https://badge.fury.io/js/%40dojo%2Fstatic-optimize-plugin)|Alpha|
 
 #### Support Packages
 
