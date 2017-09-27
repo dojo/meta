@@ -326,7 +326,7 @@ The following naming conventions *SHOULD* be used:
 	const message: string = '';
 	```
 
-1. Declarations for exported functions and class methods *SHOULD* include an explicit return type declaration for clarity.
+1. Declarations for exported functions and public class methods *SHOULD* include an explicit return type declaration for clarity.
 
 	```ts
 	// correct
@@ -352,12 +352,15 @@ The following naming conventions *SHOULD* be used:
 
 1. Class properties *SHOULD* be ordered alphabetically, case-insensitively,
 	ignoring leading underscores, in the following order:
-	* static properties
+	* private fields (properties)
+	* private methods
+	* static fields (properties)
 	* static methods
-	* instance index signature
-	* instance properties (including getters and setters; private, protected, then public)
 	* constructor
-	* instance methods (private, protected, then public)
+	* protected fields (properties)
+	* protected methods
+	* public fields (properties)
+	* public methods
 
 1. Interface properties *SHOULD* be ordered alphabetically, case-insensitively,
 	ignoring leading underscores, in the following order:
