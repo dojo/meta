@@ -23,10 +23,6 @@ While Dojo 2 tries to provide a holistic set of tools to build web applications,
 
 In order to ensure that Dojo 2 is a solid set of JavaScript tools and libraries, Dojo 2 is built on [TypeScript](https://www.typescriptlang.org/).  This provides us with structural design time typing as well as an effective way to communicate the intent of the Dojo 2 APIs.  It also provides us the ability to adopt ES6+ syntax features but make distributables that will be backwards compatible to the target browsers for Dojo 2.
 
-In addition, there are some core runtime technologies that parts of Dojo 2 are built on:
-
-* [MaquetteJS](http://maquettejs.org/) a minimalistic virtual DOM built in TypeScript
-
 ## Packages
 
 There are several packages that makeup the Dojo 2 platform:
@@ -76,7 +72,7 @@ There are several packages which are designed to support the Dojo 2 platform:
 * [dojo/dojo2-package-template](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
 * [dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
 * [dojo/grunt-dojo2-extras](https://github.com/dojo/grunt-dojo2-extras) - Additional tasks and code supporting continuous delivery with Dojo 2 packages.
-* [dojo/static-optimize-plugin](https://github.com/dojo/static-optimize-plugin) - A webpack plugin which allows code to be statically optimized for a particular context at bundling time.
+* [dojo/webpack-contrib](https://github.com/dojo/webpack-contrib) - Specialized webpack loaders and plugins used by the Dojo 2 toolchain.
 * [dojo/test-extras](https://github.com/dojo/test-extras) - A set of modules to help with testing Dojo 2
 * [dojo/web-editor](https://github.com/dojo/web-editor) - A web editor that can run projects exported from `cli-export-project`
 
@@ -122,7 +118,6 @@ These are packages which provide extended functionality, usually to other tools,
 
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
-|[dojo/static-optimize-plugin](https://github.com/dojo/static-optimize-plugin)|[![Build Status](https://travis-ci.org/dojo/static-optimize-plugin.svg?branch=master)](https://travis-ci.org/dojo/static-optimize-plugin)|[![codecov.io](https://codecov.io/gh/dojo/static-optimize-plugin/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/static-optimize-plugin/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fstatic-optimize-plugin.svg)](https://badge.fury.io/js/%40dojo%2Fstatic-optimize-plugin)|Beta4|
 |[dojo/webpack-contrib](https://github.com/dojo/webpack-contrib)|[![Build Status](https://travis-ci.org/dojo/webpack-contrib.svg?branch=master)](https://travis-ci.org/dojo/webpack-contrib)|[![codecov.io](https://codecov.io/gh/dojo/webpack-contrib/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/webpack-contrib/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fwebpack-contrib.svg)](https://badge.fury.io/js/%40dojo%2Fwebpack-contrib)|Beta4|
 
 #### Support Packages
