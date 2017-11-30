@@ -15,7 +15,7 @@ There are several documents that are relevent for contributing to Dojo 2.
 * [Contributing Guidelines](CONTRIBUTING.md) - Guidelines for contributing code (or documentation) to Dojo 2
 * [Code Of Conduct](CODE_OF_CONDUCT.md) - Guidelines for participation in all Dojo OSS communities.
 * [Style Guide](STYLE.md) - The style guide for Dojo 2.
-* [tslint.json](tslint.json) - The configuration file [tslint](https://palantir.github.io/tslint/) that is used to validate Dojo 2 code against
+* [tslint.json](https://github.com/dojo/dojo2-package-template/blob/master/tslint.json) - The configuration file [tslint](https://palantir.github.io/tslint/) that is used to validate Dojo 2 code against
 
 ## Dependent Technologies
 
