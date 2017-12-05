@@ -15,7 +15,7 @@ The following naming conventions *MUST* be used:
 |all other modules|`lowerCamelCase`|
 |classes, interfaces, and type aliases|`UpperCamelCase`|
 |enums and enum value names|`UpperCamelCase`|
-|constants|`UPPER_CASE_WITH_UNDERSCORES`|
+|constants|`UPPER_CASE_WITH_UNDERSCORES` or `lowerCamelCase`|
 |variables|`lowerCamelCase` or `_lowerCamelCase`*|
 |parameters|`lowerCamelCase` or `_lowerCamelCase`*|
 |public properties|`lowerCamelCase`|
@@ -66,7 +66,7 @@ The following naming conventions *SHOULD* be used:
 	with a comment representing the literal value of the number (e.g.
 	`if (event.keyCode === Keys.KEY_A)` or
 	`if (event.keyCode === /* "a" */ 97)`).
-
+1. Const variables that are used as object property aliases *SHOULD* follow `lowerCamelCase` naming conventions (e.g. `const { firstName = 'firstName'} = this.properties;`)
 ### Variables
 
 1. All variables which are not reassigned in the block *SHOULD* be declared with `const`:
