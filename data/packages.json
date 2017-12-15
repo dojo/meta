@@ -1,0 +1,114 @@
+{
+	"@dojo/actions": {
+		"github": "dojo/actions",
+		"deprecated": true
+	},
+	"@dojo/app": {
+		"github": "dojo/app",
+		"deprecated": true
+	},
+	"@dojo/cli": {
+		"github": "dojo/cli"
+	},
+	"@dojo/cli-build-app": {
+		"github": "dojo/cli-build-app"
+	},
+	"@dojo/cli-build-webpack": {
+		"github": "dojo/cli-build-webpack"
+	},
+	"@dojo/cli-create-app": {
+		"github": "dojo/cli-create-app"
+	},
+	"@dojo/cli-build-theme": {
+		"github": "dojo/cli-build-theme"
+	},
+	"@dojo/cli-build-widget": {
+		"github": "dojo/cli-build-widget"
+	},
+	"@dojo/cli-css-typings": {
+		"github": "dojo/cli-css-typings",
+		"deprecated": true
+	},
+	"@dojo/cli-export-project": {
+		"github": "dojo/cli-export-project"
+	},
+	"@dojo/cli-test-intern": {
+		"github": "dojo/cli-test-intern"
+	},
+	"@dojo/cli-core": {
+		"github": "dojo/cli-core"
+	},
+	"@dojo/cli-crypto": {
+		"github": "dojo/cli-crypto"
+	},
+	"@dojo/cli-dataviz": {
+		"github": "dojo/cli-dataviz"
+	},
+	"@dojo/cli-dgrid": {
+		"github": "dojo/cli-dgrid",
+		"deprecated": true
+	},
+	"dojo.io": {
+		"github": "dojo/dojo.io",
+		"nopublish": true
+	},
+	"@dojo/package-template": {
+		"github": "dojo/dojo2-package-template",
+		"nopublish": true
+	},
+	"@dojo/examples": {
+		"github": "dojo/examples"
+	},
+	"grunt-dojo2": {
+		"github": "dojo/grunt-dojo2"
+	},
+	"grunt-dojo2-extras": {
+		"github": "dojo/grunt-dojo2-extras"
+	},
+	"@dojo/has": {
+		"github": "dojo/has"
+	},
+	"@dojo/i18n": {
+		"github": "dojo/i18n"
+	},
+	"@dojo/interfaces": {
+		"github": "dojo/interfaces"
+	},
+	"@dojo/interop": {
+		"github": "dojo/interop"
+	},
+	"@dojo/loader": {
+		"github": "dojo/loader"
+	},
+	"dojo-meta": {
+		"github": "dojo/meta",
+		"nopublish": true
+	},
+	"@dojo/routing": {
+		"github": "dojo/routing"
+	},
+	"@dojo/shim": {
+		"github": "dojo/shim"
+	},
+	"@dojo/streams": {
+		"github": "dojo/streams"
+	},
+	"@dojo/stores": {
+		"github": "dojo/stores"
+	},
+	"@dojo/test-extras": {
+		"github": "dojo/test-extras"
+	},
+	"@dojo/web-editor": {
+		"github": "dojo/web-editor"
+	},
+	"@dojo/web-contrib": {
+		"github": "dojo/web-contrib"
+	},
+	"@dojo/widget-core": {
+		"github": "dojo/widget-core"
+	},
+	"@dojo/widgets": {
+		"github": "dojo/widgets"
+	}
+}
