@@ -30,12 +30,13 @@ In order to ensure that Dojo 2 is a solid set of JavaScript tools and libraries,
 There are several packages that makeup the Dojo 2 platform:
 
 * [`dojo/cli`](https://github.com/dojo/cli) - Command Line Tooling for Dojo 2 Applications
-  * [`dojo/cli-build-webpack`](https://github.com/dojo/cli-build-webpack) - Command for building applications
+  * [`dojo/cli-build-app`](https://github.com/dojo/cli-build-app) - A CLI command for building Dojo 2 applications
+  * [`dojo/cli-build-webpack`](https://github.com/dojo/cli-build-webpack) - A legacy application and widget build command
   * [`dojo/cli-create-app`](https://github.com/dojo/cli-create-app) - Command for creating application boilerplates
+  * [`dojo/cli-create-theme`](https://github.com/dojo/cli-create-theme) - Command for scaffolding a widget theme
   * [`dojo/cli-create-widget`](https://github.com/dojo/cli-create-widget) - Command for creating a widget template and all associated boilerplate
   * [`dojo/cli-export-project`](https://github.com/dojo/cli-export-project) - Command for exporting project bundles
   * [`dojo/cli-test-intern`](https://github.com/dojo/cli-test-intern) - Command for testing projects with [Intern](https://theintern.github.io)
-  * [`dojo/cli-create-theme`](https://github.com/dojo/cli-create-theme) - Command for scaffolding a widget theme
 * [`dojo/core`](https://github.com/dojo/core) - The foundational code of the Dojo 2 platform
 * [`dojo/has`](https://github.com/dojo/has) - A feature detection library
 * [`dojo/interfaces`](https://github.com/dojo/interfaces) - Common interfaces and types for Dojo 2
@@ -70,16 +71,19 @@ in the [dojo/examples](https://github.com/dojo/examples) repository and are _liv
 
 ### Support Packages
 
-There are several packages which are designed to support the Dojo 2 platform:
+There are a few packages which are designed to make it easier to develop Dojo 2:
 
-* [dojo/dojo2-package-template](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
-* [dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
-* [dojo/grunt-dojo2-extras](https://github.com/dojo/grunt-dojo2-extras) - Additional tasks and code supporting continuous delivery with Dojo 2 packages.
-* [dojo/webpack-contrib](https://github.com/dojo/webpack-contrib) - Specialized webpack loaders and plugins used by the Dojo 2 toolchain.
-* [dojo/test-extras](https://github.com/dojo/test-extras) - A set of modules to help with testing Dojo 2
-* [dojo/web-editor](https://github.com/dojo/web-editor) - A web editor that can run projects exported from `cli-export-project`
+* [`dojo/diagnostics`](https://github.com/dojo/diagnostics) - A set of modules that can be used to instrument Dojo 2 applications to provide additional diagnostic information.
+* [`dojo/devtool`](https://github.com/dojo/devtool) - A devtool extension for Chrome and Firefox that provides an interface to the `dojo/diagnostics` information.
+* [`dojo/test-extras`](https://github.com/dojo/test-extras) - A set of modules to help with testing Dojo 2
 
-These packages are aimed at Dojo 2 contributors and those building custom development pipelines rather than Dojo 2 end users.
+There are several packages which are designed to support the Dojo 2 platform.  Generally this packages are not directly used by end developers:
+
+* [`dojo/dojo2-package-template`](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
+* [`dojo/grunt-dojo2`](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
+* [`dojo/grunt-dojo2-extras`](https://github.com/dojo/grunt-dojo2-extras) - Additional tasks and code supporting continuous delivery with Dojo 2 packages.
+* [`dojo/webpack-contrib`](https://github.com/dojo/webpack-contrib) - Specialized webpack loaders and plugins used by the Dojo 2 toolchain.
+* [`dojo/web-editor`](https://github.com/dojo/web-editor) - A web editor that can run projects exported from `cli-export-project`
 
 ### Status
 
@@ -108,10 +112,11 @@ into the CLI.
 
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
-|[dojo/cli-build-webpack](https://github.com/dojo/cli-build-webpack)|[![Build Status](https://travis-ci.org/dojo/cli-build-webpack.svg?branch=master)](https://travis-ci.org/dojo/cli-build-webpack)|[![codecov.io](https://codecov.io/gh/dojo/cli-build-webpack/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build-webpack/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack.svg)](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack)|Beta4|
+|[dojo/cli-build-app](https://github.com/dojo/cli-build-app)|[![Build Status](https://travis-ci.org/dojo/cli-build-app.svg?branch=master)](https://travis-ci.org/dojo/cli-build-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-build-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build-app/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-build-app.svg)](https://badge.fury.io/js/%40dojo%2Fcli-build-app)|_Beta5_|
+|[dojo/cli-build-webpack](https://github.com/dojo/cli-build-webpack)|[![Build Status](https://travis-ci.org/dojo/cli-build-webpack.svg?branch=master)](https://travis-ci.org/dojo/cli-build-webpack)|[![codecov.io](https://codecov.io/gh/dojo/cli-build-webpack/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build-webpack/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack.svg)](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack)|_Deprecated_|
 |[dojo/cli-create-app](https://github.com/dojo/cli-create-app)|[![Build Status](https://travis-ci.org/dojo/cli-create-app.svg?branch=master)](https://travis-ci.org/dojo/cli-create-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-app/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-app.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-app)|Beta4|
-|[dojo/cli-create-widget](https://github.com/dojo/cli-create-widget)|[![Build Status](https://travis-ci.org/dojo/cli-create-widget.svg?branch=master)](https://travis-ci.org/dojo/cli-create-widget)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-widget/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-widget/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-widget.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-widget)|Alpha|
 |[dojo/cli-create-theme](https://github.com/dojo/cli-create-theme)|[![Build Status](https://travis-ci.org/dojo/cli-create-theme.svg?branch=master)](https://travis-ci.org/dojo/cli-create-theme)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-theme/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-theme/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-theme.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-theme)|Alpha|
+|[dojo/cli-create-widget](https://github.com/dojo/cli-create-widget)|[![Build Status](https://travis-ci.org/dojo/cli-create-widget.svg?branch=master)](https://travis-ci.org/dojo/cli-create-widget)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-widget/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-widget/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-widget.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-widget)|Alpha|
 |[dojo/cli-export-project](https://github.com/dojo/cli-export-project)|[![Build Status](https://travis-ci.org/dojo/cli-export-project.svg?branch=master)](https://travis-ci.org/dojo/cli-export-project)|[![codecov.io](https://codecov.io/gh/dojo/cli-export-project/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-export-project/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-export-project.svg)](https://badge.fury.io/js/%40dojo%2Fcli-export-project)|Alpha|
 |[dojo/cli-test-intern](https://github.com/dojo/cli-test-intern)|[![Build Status](https://travis-ci.org/dojo/cli-test-intern.svg?branch=master)](https://travis-ci.org/dojo/cli-test-intern)|[![codecov.io](https://codecov.io/gh/dojo/cli-test-intern/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-test-intern/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-test-intern.svg)](https://badge.fury.io/js/%40dojo%2Fcli-test-intern)|Beta4|
 
@@ -121,6 +126,8 @@ These are packages which provide extended functionality, usually to other tools,
 
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
+|[dojo/devtool](https://github.com/dojo/devtool)|[![Build Status](https://travis-ci.org/dojo/devtool.svg?branch=master)](https://travis-ci.org/dojo/devtool)|[![codecov.io](https://codecov.io/gh/dojo/devtool/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/devtool/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fdevtool.svg)](https://badge.fury.io/js/%40dojo%2Fdevtool)| |
+|[dojo/diagnostics](https://github.com/dojo/diagnostics)|[![Build Status](https://travis-ci.org/dojo/diagnostics.svg?branch=master)](https://travis-ci.org/dojo/diagnostics)|[![codecov.io](https://codecov.io/gh/dojo/diagnostics/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/diagnostics/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fdiagnostics.svg)](https://badge.fury.io/js/%40dojo%2Fdiagnostics)| |
 |[dojo/webpack-contrib](https://github.com/dojo/webpack-contrib)|[![Build Status](https://travis-ci.org/dojo/webpack-contrib.svg?branch=master)](https://travis-ci.org/dojo/webpack-contrib)|[![codecov.io](https://codecov.io/gh/dojo/webpack-contrib/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/webpack-contrib/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fwebpack-contrib.svg)](https://badge.fury.io/js/%40dojo%2Fwebpack-contrib)|Beta4|
 
 #### Support Packages
@@ -132,7 +139,6 @@ others who are developing Dojo 2 applications:
 |-------|---------|-------------|----------|-----|
 |[dojo/test-extras](https://github.com/dojo/test-extras/)|[![Build Status](https://travis-ci.org/dojo/test-extras.svg?branch=master)](https://travis-ci.org/dojo/test-extras)|[![codecov.io](https://codecov.io/gh/dojo/test-extras/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/test-extras/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Ftest-extras.svg)](https://badge.fury.io/js/%40dojo%2Ftest-extras)|Beta4|
 |[dojo/web-editor](https://github.com/dojo/web-editor/)|[![Build Status](https://travis-ci.org/dojo/web-editor.svg?branch=master)](https://travis-ci.org/dojo/web-editor)|[![codecov.io](https://codecov.io/gh/dojo/web-editor/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/web-editor/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fweb-editor.svg)](https://badge.fury.io/js/%40dojo%2Fweb-editor)|Alpha|
-
 
 #### Proposed packages
 
