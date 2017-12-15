@@ -19,11 +19,11 @@
 	"@dojo/cli-create-app": {
 		"github": "dojo/cli-create-app"
 	},
-	"@dojo/cli-build-theme": {
-		"github": "dojo/cli-build-theme"
+	"@dojo/cli-create-theme": {
+		"github": "dojo/cli-create-theme"
 	},
-	"@dojo/cli-build-widget": {
-		"github": "dojo/cli-build-widget"
+	"@dojo/cli-create-widget": {
+		"github": "dojo/cli-create-widget"
 	},
 	"@dojo/cli-css-typings": {
 		"github": "dojo/cli-css-typings",
