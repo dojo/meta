@@ -35,17 +35,17 @@
 	"@dojo/cli-test-intern": {
 		"github": "dojo/cli-test-intern"
 	},
-	"@dojo/cli-core": {
-		"github": "dojo/cli-core"
+	"@dojo/core": {
+		"github": "dojo/core"
 	},
-	"@dojo/cli-crypto": {
-		"github": "dojo/cli-crypto"
+	"@dojo/crypto": {
+		"github": "dojo/crypto"
 	},
-	"@dojo/cli-dataviz": {
-		"github": "dojo/cli-dataviz"
+	"@dojo/dataviz": {
+		"github": "dojo/dataviz"
 	},
-	"@dojo/cli-dgrid": {
-		"github": "dojo/cli-dgrid",
+	"@dojo/dgrid": {
+		"github": "dojo/dgrid",
 		"deprecated": true
 	},
 	"dojo.io": {
