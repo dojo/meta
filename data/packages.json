@@ -44,6 +44,12 @@
 	"@dojo/dataviz": {
 		"github": "dojo/dataviz"
 	},
+	"@dojo/devtool": {
+		"github": "dojo/devtool"
+	},
+	"@dojo/diagnostics": {
+		"github": "dojo/diagnostics"
+	},
 	"@dojo/dgrid": {
 		"github": "dojo/dgrid",
 		"deprecated": true
