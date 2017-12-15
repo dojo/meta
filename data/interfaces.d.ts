@@ -13,7 +13,7 @@ export namespace Meta {
 			/**
 			 * A flag that indicates that package is _deprecated_ and therefore no longer being maintained
 			 */
-			deprectated?: boolean;
+			deprecated?: boolean;
 
 			/**
 			 * The organisation and repository name on GitHub
