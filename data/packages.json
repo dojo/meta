@@ -102,8 +102,8 @@
 	"@dojo/web-editor": {
 		"github": "dojo/web-editor"
 	},
-	"@dojo/web-contrib": {
-		"github": "dojo/web-contrib"
+	"@dojo/webpack-contrib": {
+		"github": "dojo/webpack-contrib"
 	},
 	"@dojo/widget-core": {
 		"github": "dojo/widget-core"
