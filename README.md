@@ -16,7 +16,7 @@ There are several documents that are relevant for contributing to Dojo 2.
 
 * [Contributing Guidelines](CONTRIBUTING.md) - Guidelines for contributing code (or documentation) to Dojo 2
 * [Code Of Conduct](CODE_OF_CONDUCT.md) - Guidelines for participation in all Dojo OSS communities.
-* [Style Guide](STYLE.md) - The style guide for Dojo 2.
+* [Style Guide](STYLE.md) - The style guide for Dojo 2 for packages that do not use [prettier](https://prettier.io)
 * [tslint.json](https://github.com/dojo/dojo2-package-template/blob/master/tslint.json) - The configuration file [tslint](https://palantir.github.io/tslint/) that is used to validate Dojo 2 code against
 
 ## Dependent Technologies
@@ -31,7 +31,7 @@ There are several packages that makeup the Dojo 2 platform:
 
 * [`dojo/cli`](https://github.com/dojo/cli) - Command Line Tooling for Dojo 2 Applications
   * [`dojo/cli-build-app`](https://github.com/dojo/cli-build-app) - A CLI command for building Dojo 2 applications
-  * [`dojo/cli-build-webpack`](https://github.com/dojo/cli-build-webpack) - A legacy application and widget build command
+  * [`dojo/cli-build-widget`](https://github.com/dojo/cli-build-widget) - A CLI command for building widgets
   * [`dojo/cli-create-app`](https://github.com/dojo/cli-create-app) - Command for creating application boilerplates
   * [`dojo/cli-create-theme`](https://github.com/dojo/cli-create-theme) - Command for scaffolding a widget theme
   * [`dojo/cli-create-widget`](https://github.com/dojo/cli-create-widget) - Command for creating a widget template and all associated boilerplate
@@ -59,6 +59,7 @@ We have some deprecated packages:
 
 * [`dojo/actions`](https://github.com/dojo/actions) - A command like library for Dojo 2 applications - *This is deprecated because we have not found this abstraction to add value*
 * [`dojo/app`](https://github.com/dojo/app) - An application framework for Dojo 2 - *This is deprecated because widgets + routing + stores are sufficient to deal with higher order application concerns*
+* [`dojo/cli-build-webpack`](https://github.com/dojo/cli-build-webpack) - A legacy application and widget build command - *This is depracated as it has been superseded by `@dojo/cli-build-app` and `@dojo/cli-build-widget` *
 * [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library - *This is deprecated because TypeScript now offers mixin behavior*
 * [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM - *This is deprecated because Dojo 2 will fully abstract away DOM access.*
 * [`dojo/interfaces`](https://github.com/dojo/interfaces) - Common interfaces and types for Dojo 2 - *This has been deprecated as interfaces now live in their respecitive repository*
@@ -112,7 +113,7 @@ into the CLI.
 |Package|CI Status|Code Coverage|npm       |Stage|
 |-------|---------|-------------|----------|-----|
 |[dojo/cli-build-app](https://github.com/dojo/cli-build-app)|[![Build Status](https://travis-ci.org/dojo/cli-build-app.svg?branch=master)](https://travis-ci.org/dojo/cli-build-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-build-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build-app/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-build-app.svg)](https://badge.fury.io/js/%40dojo%2Fcli-build-app)|Beta5|
-|[dojo/cli-build-webpack](https://github.com/dojo/cli-build-webpack)|[![Build Status](https://travis-ci.org/dojo/cli-build-webpack.svg?branch=master)](https://travis-ci.org/dojo/cli-build-webpack)|[![codecov.io](https://codecov.io/gh/dojo/cli-build-webpack/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build-webpack/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack.svg)](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack)|_Deprecated_|
+|[dojo/cli-build-widget](https://github.com/dojo/cli-build-widget)|[![Build Status](https://travis-ci.org/dojo/cli-build-widget.svg?branch=master)](https://travis-ci.org/dojo/cli-build-widget)|[![codecov.io](https://codecov.io/gh/dojo/cli-build-widget/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build-widget/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-build-widget.svg)](https://badge.fury.io/js/%40dojo%2Fcli-build-widget)|Alpha|
 |[dojo/cli-create-app](https://github.com/dojo/cli-create-app)|[![Build Status](https://travis-ci.org/dojo/cli-create-app.svg?branch=master)](https://travis-ci.org/dojo/cli-create-app)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-app/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-app.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-app)|Beta5|
 |[dojo/cli-create-theme](https://github.com/dojo/cli-create-theme)|[![Build Status](https://travis-ci.org/dojo/cli-create-theme.svg?branch=master)](https://travis-ci.org/dojo/cli-create-theme)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-theme/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-theme/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-theme.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-theme)|Beta5|
 |[dojo/cli-create-widget](https://github.com/dojo/cli-create-widget)|[![Build Status](https://travis-ci.org/dojo/cli-create-widget.svg?branch=master)](https://travis-ci.org/dojo/cli-create-widget)|[![codecov.io](https://codecov.io/gh/dojo/cli-create-widget/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-create-widget/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-create-widget.svg)](https://badge.fury.io/js/%40dojo%2Fcli-create-widget)|Beta5|
@@ -166,6 +167,7 @@ others who are developing Dojo 2 applications:
 |-------|---------|-------------|----------|-----|
 |[dojo/actions](https://github.com/dojo/actions)|[![Build Status](https://travis-ci.org/dojo/actions.svg?branch=master)](https://travis-ci.org/dojo/actions)|[![codecov.io](https://codecov.io/gh/dojo/actions/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/actions/branch/master)| | |
 |[dojo/app](https://github.com/dojo/app)|[![Build Status](https://travis-ci.org/dojo/app.svg?branch=master)](https://travis-ci.org/dojo/app)|[![codecov.io](https://codecov.io/gh/dojo/app/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/app/branch/master)| | |
+|[dojo/cli-build-webpack](https://github.com/dojo/cli-build-webpack)|[![Build Status](https://travis-ci.org/dojo/cli-build-webpack.svg?branch=master)](https://travis-ci.org/dojo/cli-build-webpack)|[![codecov.io](https://codecov.io/gh/dojo/cli-build-webpack/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/cli-build-webpack/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack.svg)](https://badge.fury.io/js/%40dojo%2Fcli-build-webpack)| |
 |[dojo/compose](https://github.com/dojo/compose)|[![Build Status](https://travis-ci.org/dojo/compose.svg?branch=master)](https://travis-ci.org/dojo/compose)|[![codecov.io](https://codecov.io/gh/dojo/compose/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/compose/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fcompose.svg)](https://badge.fury.io/js/%40dojo%2Fcompose)|Beta1|
 |[dojo/dom](https://github.com/dojo/dom)|[![Build Status](https://travis-ci.org/dojo/dom.svg?branch=master)](https://travis-ci.org/dojo/dom)|[![codecov.io](https://codecov.io/gh/dojo/dom/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/dom/branch/master)|
 |[dojo/interfaces](https://github.com/dojo/interfaces)|[![Build Status](https://travis-ci.org/dojo/interfaces.svg?branch=master)](https://travis-ci.org/dojo/interfaces)| |[![npm version](https://badge.fury.io/js/%40dojo%2Finterfaces.svg)](https://badge.fury.io/js/%40dojo%2Finterfaces)| |
