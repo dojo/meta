@@ -59,10 +59,10 @@ We have some deprecated packages:
 
 * [`dojo/actions`](https://github.com/dojo/actions) - A command like library for Dojo 2 applications - *This is deprecated because we have not found this abstraction to add value*
 * [`dojo/app`](https://github.com/dojo/app) - An application framework for Dojo 2 - *This is deprecated because widgets + routing + stores are sufficient to deal with higher order application concerns*
-* [`dojo/cli-build-webpack`](https://github.com/dojo/cli-build-webpack) - A legacy application and widget build command - *This is depracated as it has been superseded by `@dojo/cli-build-app` and `@dojo/cli-build-widget` *
+* [`dojo/cli-build-webpack`](https://github.com/dojo/cli-build-webpack) - A legacy application and widget build command - *This is deprecated as it has been superseded by `@dojo/cli-build-app` and `@dojo/cli-build-widget` *
 * [`dojo/compose`](https://github.com/dojo/compose) - A mixin/trait based composition library - *This is deprecated because TypeScript now offers mixin behavior*
 * [`dojo/dom`](https://github.com/dojo/dom) - A set of APIs for manipulating the DOM - *This is deprecated because Dojo 2 will fully abstract away DOM access.*
-* [`dojo/interfaces`](https://github.com/dojo/interfaces) - Common interfaces and types for Dojo 2 - *This has been deprecated as interfaces now live in their respecitive repository*
+* [`dojo/interfaces`](https://github.com/dojo/interfaces) - Common interfaces and types for Dojo 2 - *This has been deprecated as interfaces now live in their respective repositories*
 * [`dojo/parser`](https://github.com/dojo/parser) - A HTML document parser for instantiating objects declaratively - *This is deprecated in lieu of functionality provided using Custom Elements from `@dojo/widget-core`.*
 
 ### Examples
