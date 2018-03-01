@@ -46,6 +46,7 @@ There are several packages that makeup the Dojo 2 platform:
 * [`dojo/shim`](https://github.com/dojo/shim) - Modules that provide fills of ES6+ functionality
 * [`dojo/stores`](https://github.com/dojo/stores) - A lightweight state container
 * [`dojo/streams`](https://github.com/dojo/streams) - WHATWG Streams implementation
+* [`dojo/themes`](https://github.com/dojo/themes) - Collection of Dojo 2 themes.
 * [`dojo/widget-core`](https://github.com/dojo/widget-core) - The foundation code of Dojo 2 widgets
 * [`dojo/widgets`](https://github.com/dojo/widgets) - A set of rich UI elements
 
@@ -83,6 +84,7 @@ There are several packages which are designed to support the Dojo 2 platform.  G
 * [`dojo/dojo2-package-template`](https://github.com/dojo/dojo2-package-template) - The standard template for Dojo 2 packages, including build and packaging templates
 * [`dojo/grunt-dojo2`](https://github.com/dojo/grunt-dojo2) - A set of Grunt tasks for use with Dojo 2 packages.
 * [`dojo/grunt-dojo2-extras`](https://github.com/dojo/grunt-dojo2-extras) - Additional tasks and code supporting continuous delivery with Dojo 2 packages.
+* [`dojo/scripts`](https://github.com/dojo/scripts) - A package of scripts to aid with Dojo 2 package development.
 * [`dojo/webpack-contrib`](https://github.com/dojo/webpack-contrib) - Specialized webpack loaders and plugins used by the Dojo 2 toolchain.
 * [`dojo/web-editor`](https://github.com/dojo/web-editor) - A web editor that can run projects exported from `cli-export-project`
 
@@ -102,6 +104,7 @@ The following tables contain status information for the packages:
 |[dojo/shim](https://github.com/dojo/shim)|[![Build Status](https://travis-ci.org/dojo/shim.svg?branch=master)](https://travis-ci.org/dojo/shim)|[![codecov.io](https://codecov.io/gh/dojo/shim/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/shim/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fshim.svg)](https://badge.fury.io/js/%40dojo%2Fshim)|Beta5|
 |[dojo/stores](https://github.com/dojo/stores)|[![Build Status](https://travis-ci.org/dojo/stores.svg?branch=master)](https://travis-ci.org/dojo/stores)|[![codecov.io](https://codecov.io/gh/dojo/stores/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/stores/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fstores.svg)](https://badge.fury.io/js/%40dojo%2Fstores)|Beta5|
 |[dojo/streams](https://github.com/dojo/streams)|[![Build Status](https://travis-ci.org/dojo/streams.svg?branch=master)](https://travis-ci.org/dojo/streams)|[![codecov.io](https://codecov.io/gh/dojo/streams/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/streams/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fstreams.svg)](https://badge.fury.io/js/%40dojo%2Fstreams)|Alpha|
+|[dojo/themes](https://github.com/dojo/themes)|[![Build Status](https://travis-ci.org/dojo/themes.svg?branch=master)](https://travis-ci.org/dojo/themes)|[![codecov.io](https://codecov.io/gh/dojo/themes/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/themes/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fthemes.svg)](https://badge.fury.io/js/%40dojo%2Fthemes)|Alpha|
 |[dojo/widget-core](https://github.com/dojo/widget-core)|[![Build Status](https://travis-ci.org/dojo/widget-core.svg?branch=master)](https://travis-ci.org/dojo/widget-core)|[![codecov.io](https://codecov.io/gh/dojo/widget-core/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/widget-core/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fwidget-core.svg)](https://badge.fury.io/js/%40dojo%2Fwidget-core)|Beta5|
 |[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](https://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/widgets/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fwidgets.svg)](https://badge.fury.io/js/%40dojo%2Fwidgets)|Beta5|
 
@@ -160,6 +163,7 @@ others who are developing Dojo 2 applications:
 |-------|---------|-------------|----------|-----|
 |[dojo/grunt-dojo2](https://github.com/dojo/grunt-dojo2/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2.svg)](https://badge.fury.io/js/grunt-dojo2)|Beta1|
 |[dojo/grunt-dojo2-extras](https://github.com/dojo/grunt-dojo2-extras/)|[![Build Status](https://travis-ci.org/dojo/grunt-dojo2-extras.svg?branch=master)](https://travis-ci.org/dojo/grunt-dojo2-extras)|[![codecov.io](https://codecov.io/gh/dojo/grunt-dojo2-extras/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/grunt-dojo2-extras/branch/master)|[![npm version](https://badge.fury.io/js/grunt-dojo2-extras.svg)](https://badge.fury.io/js/grunt-dojo2-extras)|Alpha|
+|[dojo/scripts](https://github.com/dojo/scripts)|[![Build Status](https://travis-ci.org/dojo/scripts.svg?branch=master)](https://travis-ci.org/dojo/scripts)|[![codecov.io](https://codecov.io/gh/dojo/scripts/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/scripts/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fscripts.svg)](https://badge.fury.io/js/%40dojo%2Fscripts)|Alpha|
 
 #### Deprecated packages
 
