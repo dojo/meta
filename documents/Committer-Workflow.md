@@ -245,3 +245,9 @@ Then push the changes upstream:
 ```
 $ git push && git push --tags
 ```
+
+## Versioning
+
+Dojo follows semantic versioning (Breaking changes occur with major releases, e.g. 3.0.0, enhancements occur with either major releases or minor releases, e.g. 3.1.0, and patch releases are limited to bug fixes, e.g. 3.1.1).
+
+Because Dojo is distributed as many packages, major versions will be synced. E.g. all packages for 2.x will start with a 2.0.0 release. Packages will individually release updates to their minor and patch releases, but when we are ready for a new major release, all packages will be released with a new major version number. Packages that are added will start with the current major version number for their initial release.
