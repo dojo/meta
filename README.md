@@ -4,7 +4,7 @@
 
 # dojo-meta
 
-[![Join the chat at https://discordapp.com/invite/M7yRngE](https://img.shields.io/discord/471607790213922816.svg?style=for-the-badge)](https://discordapp.com/invite/M7yRngE)
+[![Join the chat at https://discordapp.com/invite/M7yRngE](https://img.shields.io/discord/471607790213922816.svg?logo=discord)](https://discordapp.com/invite/M7yRngE)
 
 This repository contains information regarding Dojo (versions 2 and newer) that crosses package boundaries.
 
