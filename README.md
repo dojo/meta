@@ -25,6 +25,16 @@ While Dojo tries to provide a holistic set of tools to build web applications, t
 
 In order to ensure that Dojo is a solid set of JavaScript tools and libraries, Dojo is built on [TypeScript](https://www.typescriptlang.org/).  This provides us with structural design time typing as well as an effective way to communicate the intent of the Dojo APIs.  It also provides us the ability to adopt ES6+ syntax features but make distributables that will be backwards compatible to the target browsers for Dojo.
 
+### TypeScript and Dojo Compatibility Matrix
+
+TypeScript and Dojo both iterate rapidly. In general Dojo strives for maximum compatibility, with a plan to periodically increase the minimum TypeScript version so we can begin relying on newer TypeScript features. Please review this list when using Dojo:
+
+|Dojo version|TypeScript version (minimum)|TypeScript version (maximum)|
+|-------|---------|-------------|
+|2.0|2.6.x|2.6.x|
+|3.0|2.6.x|2.6.x|
+|4.0|2.6.x|3.1.x|
+
 ## Packages
 
 There are several packages that makeup the Dojo platform:
