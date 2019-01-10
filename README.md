@@ -35,7 +35,6 @@ TypeScript and Dojo both iterate rapidly. In general Dojo strives for maximum co
 |3.0|2.6.x|2.6.x|
 |4.0|2.6.x|3.1.x|
 |5.0|2.6.x|3.2.x|
-|-------|---------|-------------|
 
 ## Packages
 
