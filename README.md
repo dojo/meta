@@ -51,7 +51,6 @@ There are several packages that makeup the Dojo platform:
 * [`dojo/themes`](https://github.com/dojo/themes) - Collection of Dojo themes.
 * [`dojo/widgets`](https://github.com/dojo/widgets) - A set of rich UI elements
 * [`dojo/loader`](https://github.com/dojo/loader) - A TypeScript based AMD loader
-* [`dojo/streams`](https://github.com/dojo/streams) - WHATWG Streams implementation
 
 ### Examples
 
@@ -77,7 +76,6 @@ The following tables contain status information for the packages:
 |[dojo/themes](https://github.com/dojo/themes)|[![Build Status](https://travis-ci.org/dojo/themes.svg?branch=master)](https://travis-ci.org/dojo/themes)|[![codecov.io](https://codecov.io/gh/dojo/themes/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/themes/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fthemes.svg)](https://badge.fury.io/js/%40dojo%2Fthemes)|4.0|
 |[dojo/widgets](https://github.com/dojo/widgets)|[![Build Status](https://travis-ci.org/dojo/widgets.svg?branch=master)](https://travis-ci.org/dojo/widgets)|[![codecov.io](https://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/widgets/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fwidgets.svg)](https://badge.fury.io/js/%40dojo%2Fwidgets)|4.0|
 |[dojo/loader](https://github.com/dojo/loader)|[![Build Status](https://travis-ci.org/dojo/loader.svg?branch=master)](https://travis-ci.org/dojo/loader)|[![codecov.io](https://codecov.io/gh/dojo/loader/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/loader/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Floader.svg)](https://badge.fury.io/js/%40dojo%2Floader)|2.0|
-|[dojo/streams](https://github.com/dojo/streams)|[![Build Status](https://travis-ci.org/dojo/streams.svg?branch=master)](https://travis-ci.org/dojo/streams)|[![codecov.io](https://codecov.io/gh/dojo/streams/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/streams/branch/master)|[![npm version](https://badge.fury.io/js/%40dojo%2Fstreams.svg)](https://badge.fury.io/js/%40dojo%2Fstreams)|Alpha|
 
 #### CLI Packages
 
